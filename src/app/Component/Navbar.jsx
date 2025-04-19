@@ -8,11 +8,11 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className='bg-[#FFE9D9]'>
       <div className='flex justify-between items-center border-b-[1px] border-[#00000033] '>
         <div className='flex gap-2 pt-6 pb-6 pl-6'>
           <Image
-            src={logo} className='w-8 h-8 gap-2' />
+            src={logo} className='w-8 h-8 gap-2' alt='logo'/>
           <h2 className='text-[24px] font-bold'>Roudra</h2>
         </div>
         <div className='flex gap-[20px] items-center'>

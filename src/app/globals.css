@@ -1,2 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+    --font-syne:  "Syne", "sans-serif"; 
+    
+}
+@theme {
+    --font-DM_Sans:  "DM Sans", "sans-serif"; 
+    
+}
+
+.container {
+    margin:0 auto;
+    
+}
