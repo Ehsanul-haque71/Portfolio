@@ -1,11 +1,17 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Syne } from 'next/font/google';
+import { DM_Sans } from 'next/font/google';
 import "./globals.css";
 import Navbar from "./Component/Navbar";
 import Hero from "./Component/Hero"
+import Specialties from "./Component/Specialties"
 
 const syne = Syne({
   variable: "--font-syne",
+  subsets: ['latin'],
+})
+const dmSans = DM_Sans({
+  variable: "--font-dmsans",
   subsets: ['latin'],
 })
 
@@ -28,10 +34,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${syne.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${syne.variable} ${dmSans.variable} antialiased`}
       >
         <Navbar/>
         <Hero/>
+        <Specialties/>
         {children}
       </body>
     </html>
