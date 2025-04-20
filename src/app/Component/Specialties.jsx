@@ -121,8 +121,8 @@ const Specialties = () => {
                                 <h7 className="leading-[40px] text-[32px] font-bold font-syne">3.5k</h7>
                                 <p className="leading-[28px] text-[18px] text-[#08080899]">Job done successfully</p>
                             </div>
-                            <div className="pt-[36px]  w-[253px] h-[56px]">
-                                <button class="bg-black text-white w-[256px] h-[56px] px-8 py-5 rounded-lg flex items-center justify-between font-DM_Sans cursor-pointer hover:text-[#FF9330]">   Download my resume
+                            <div className="pt-[36px]  w-[253px] h-[56px] mb-[120px]">
+                                <button className="bg-black text-white w-[256px] h-[56px] px-8 py-5 rounded-lg flex items-center justify-between font-DM_Sans cursor-pointer hover:text-[#FF9330] ">   Download my resume
                                     <span > <MdArrowOutward className='w-6 h-6 ' /> </span>
                                 </button>
                             </div>

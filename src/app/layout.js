@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "./Component/Navbar";
 import Hero from "./Component/Hero"
 import Specialties from "./Component/Specialties"
+import Resume from "./Component/Resume"
 
 const syne = Syne({
   variable: "--font-syne",
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
         <Navbar/>
         <Hero/>
         <Specialties/>
+        <Resume/>
         {children}
       </body>
     </html>
