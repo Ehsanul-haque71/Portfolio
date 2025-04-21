@@ -27,36 +27,36 @@ const Resume = () => {
                     <div className='pt-[56px]'>
                         <div className='flex pb-[16px]'>
                             <p className='text-[18px] leading-[28px] font-normal font-DM_Sans text-[#08080899] w-[110px] pr-[40px]'>Name</p>
-                            <h4 className='text-[24px] font-syne leading-[32px] font-bold'> Ehsanul Haque</h4>
+                            <span className='text-[24px] font-syne leading-[32px] font-bold'> Ehsanul Haque</span>
                         </div>
                         <div className='flex pb-[16px]'>
                             <p className='text-[18px] leading-[28px] font-normal font-DM_Sans text-[#08080899] w-[110px] pr-[40px]'>Nationality</p>
-                            <h5 className='text-[24px] font-syne leading-[32px] font-bold'>Bangladeshi</h5>
+                            <span className='text-[24px] font-syne leading-[32px] font-bold'>Bangladeshi</span>
                         </div>
                         <div className='flex pb-[16px]'>
                             <p className='text-[18px] leading-[28px] font-normal font-DM_Sans text-[#08080899] w-[110px] pr-[40px]'>phone</p>
-                            <h6 className='text-[24px] font-syne leading-[32px] font-bold'>+(2) 870 174 302</h6>
+                            <span className='text-[24px] font-syne leading-[32px] font-bold'>+(2) 870 174 302</span>
                         </div>
                         <div className='flex pb-[16px]'>
                             <p className='text-[18px] leading-[28px] font-normal font-DM_Sans text-[#08080899] w-[110px] pr-[40px]'>email</p>
-                            <h7 className='text-[24px] font-syne leading-[32px] font-bold'>hello@henry.com</h7>
+                            <span className='text-[24px] font-syne leading-[32px] font-bold'>hello@henry.com</span>
                         </div>
                         <div className='flex pb-[16px]'>
                             <p className='text-[18px] leading-[28px] font-normal font-DM_Sans text-[#08080899] w-[110px] pr-[40px]'>experience</p>
-                            <h8 className='text-[24px] font-syne leading-[32px font-bold]'>12+ years</h8>
+                            <span className='text-[24px] font-syne leading-[32px font-bold]'>12+ years</span>
                         </div>
                         <div className='flex pb-[16px]'>
                             <p className='text-[18px] leading-[28px] font-normal font-DM_Sans text-[#08080899] w-[110px] pr-[40px]'>Freelance</p>
-                            <h9 className='text-[24px] font-syne leading-[32px] font-bold'>Available</h9>
+                            <span className='text-[24px] font-syne leading-[32px] font-bold'>Available</span>
                         </div>
                         <div className='flex pb-[16px]'>
                             <p className='text-[18px] leading-[28px] font-normal font-DM_Sans text-[#08080899] w-[110px] pr-[40px]'>Linkedin</p>
-                            <h10 className='text-[24px] font-syne leading-[32px] font-bold'>Mohd. Ehsanul Haque
-                            </h10>
+                            <span className='text-[24px] font-syne leading-[32px] font-bold'>Mohd. Ehsanul Haque
+                            </span>
                         </div>
                         <div className='flex pb-[16px]'>
                             <p className='text-[18px] leading-[28px] font-normal font-DM_Sans text-[#08080899] w-[110px] pr-[40px] '>Language</p>
-                            <h11 className='text-[24px] font-syne leading-[32px] font-bold'>English,Bangla</h11>
+                            <span className='text-[24px] font-syne leading-[32px] font-bold'>English,Bangla</span>
                         </div>
                     </div>
                 </div>

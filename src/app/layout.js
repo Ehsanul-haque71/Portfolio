@@ -6,6 +6,7 @@ import Navbar from "./Component/Navbar";
 import Hero from "./Component/Hero"
 import Specialties from "./Component/Specialties"
 import Resume from "./Component/Resume"
+import Recent from "./Component/Recent"
 
 const syne = Syne({
   variable: "--font-syne",
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
         <Hero/>
         <Specialties/>
         <Resume/>
+        <Recent/>
         {children}
       </body>
     </html>
