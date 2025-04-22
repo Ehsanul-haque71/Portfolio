@@ -43,7 +43,7 @@ const Resume = () => {
                         </div>
                         <div className='flex pb-[16px]'>
                             <p className='text-[18px] leading-[28px] font-normal font-DM_Sans text-[#08080899] w-[110px] pr-[40px]'>experience</p>
-                            <span className='text-[24px] font-syne leading-[32px font-bold]'>12+ years</span>
+                            <span className='text-[24px] font-syne leading-[32px] font-bold'>12+ years</span>
                         </div>
                         <div className='flex pb-[16px]'>
                             <p className='text-[18px] leading-[28px] font-normal font-DM_Sans text-[#08080899] w-[110px] pr-[40px]'>Freelance</p>
