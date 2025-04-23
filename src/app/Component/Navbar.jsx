@@ -8,7 +8,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <div className='bg-[#FFE9D9]'>
+    <nav className='bg-[#FFE9D9]'>
       <div className='flex justify-between items-center border-b-[1px] border-[#00000033] '>
         <div className='flex gap-2 pt-6 pb-6 pl-6'>
           <Image src={logo} className='w-8 h-8 gap-2' alt='logo'/>
@@ -22,7 +22,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
 
