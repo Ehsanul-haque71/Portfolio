@@ -13,7 +13,7 @@ const Blog = () => {
                 <p className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne'>Blog</p>
                 <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-[10px]'>My blog post</h2>
             </div>
-            <div className='grid grid-cols-4 '>
+            <div className='grid grid-cols-4 gap-6'>
                 {/* blog_1 */}
                 <div className='pt-[48px]'>
                     <div>
@@ -29,9 +29,11 @@ const Blog = () => {
                             <p className='text-[14px] text-[#FF9330] leading-[20px]'>03 May 2019</p>
                         </div>
                     </div>
-                    <div className='flex items-end  cursor-pointer '>
-                        <h3 className='font-syne text-6 leading-8 font-bold w-[274px] '>Right-lo-left behind development in mobile web design</h3>
-                        <span className=' '><MdArrowOutward className='w-6 h-6' /></span>
+                    <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
+                        <div className='w-[185px]'>
+                            <h3 className='font-syne text-6 leading-8 font-bold  '>Right-lo-left behind development in mobile web design</h3>
+                        </div>
+                        <span ><MdArrowOutward className='w-6 h-6' /></span>
                     </div>
                 </div>
 
@@ -54,9 +56,11 @@ const Blog = () => {
                             <p className='text-[14px] text-[#FF9330] leading-[20px]'>03 May 2019</p>
                         </div>
                     </div>
-                    <div className='flex items-end  cursor-pointer '>
-                        <h3 className='font-syne text-6 leading-8 font-bold w-[274px] '>Connect craft: Reading the smart experience</h3>
-                        <span className=' '><MdArrowOutward className='w-6 h-6' /></span>
+                    <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330]'>
+                        <div className='w-[185px]'>
+                            <h3 className='font-syne text-6 leading-8 font-bold  '>Connect craft: Reading the smart experience</h3>
+                        </div>
+                        <span ><MdArrowOutward className='w-6 h-6' /></span>
                     </div>
                 </div>
 
@@ -76,9 +80,11 @@ const Blog = () => {
                             <p className='text-[14px] text-[#FF9330] leading-[20px]'>03 May 2019</p>
                         </div>
                     </div>
-                    <div className='flex items-end  cursor-pointer '>
-                        <h3 className='font-syne text-6 leading-8 font-bold w-[274px] '>Ecoglow: Sustainable skincare a brighter tomorrow</h3>
-                        <span className=' '><MdArrowOutward className='w-6 h-6' /></span>
+                    <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
+                        <div className='w-[185px]'>
+                            <h3 className='font-syne text-6 leading-8 font-bold  '>Ecoglow: Sustainable skincare a brighter tomorrow</h3>
+                        </div>
+                        <span ><MdArrowOutward className='w-6 h-6' /></span>
                     </div>
                 </div>
 
@@ -98,9 +104,11 @@ const Blog = () => {
                             <p className='text-[14px] text-[#FF9330] leading-[20px]'>03 May 2019</p>
                         </div>
                     </div>
-                    <div className='flex items-end  cursor-pointer '>
-                        <h3 className='font-syne text-6 leading-8 font-bold w-[274px] '>Right-lo-left behind development in mobile web design</h3>
-                        <span className=' '><MdArrowOutward className='w-6 h-6' /></span>
+                    <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
+                        <div className='w-[185px]'>
+                            <h3 className='font-syne text-6 leading-8 font-bold  '>Right-lo-left behind development in mobile web design</h3>
+                        </div>
+                        <span ><MdArrowOutward className='w-6 h-6' /></span>
                     </div>
                 </div>
 
