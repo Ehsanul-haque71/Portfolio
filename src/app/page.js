@@ -4,7 +4,9 @@ import Specialties from "./Component/Specialties";
 import Resume from "./Component/Resume";
 import Recent from "./Component/Recent";
 import Testimonial from "./Component/Testimonial";
-import Ads from "./Component/Ads"
+import Ads from "./Component/Ads";
+import Blog from "./Component/Blog";
+
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
       <Recent />
       <Testimonial />
       <Ads/>
+      <Blog/>
     </div>
   );
 }
