@@ -3,11 +3,8 @@ import { Syne } from 'next/font/google';
 import { DM_Sans } from 'next/font/google';
 import "./globals.css";
 import Navbar from "./Component/Navbar";
-import Hero from "./Component/Hero"
-import Specialties from "./Component/Specialties"
-import Resume from "./Component/Resume"
-import Recent from "./Component/Recent"
-import Testimonial from "./Component/Testimonial";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const syne = Syne({
   variable: "--font-syne",
@@ -40,12 +37,8 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${syne.variable} ${dmSans.variable} antialiased`}
       >
         <Navbar/>
-        <Hero/>
-        <Specialties/>
-        <Resume/>
-        <Recent/>
-        <Testimonial/>
         {children}
+        <footer>Footer</footer>
       </body>
     </html>
   );
