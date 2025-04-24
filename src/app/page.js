@@ -4,15 +4,17 @@ import Specialties from "./Component/Specialties";
 import Resume from "./Component/Resume";
 import Recent from "./Component/Recent";
 import Testimonial from "./Component/Testimonial";
+import Ads from "./Component/Ads"
 
 export default function Home() {
   return (
     <div>
-      <Hero/>
-        <Specialties/>
-        <Resume/>
-        <Recent/>
-        <Testimonial/>
+      <Hero />
+      <Specialties />
+      <Resume />
+      <Recent />
+      <Testimonial />
+      <Ads/>
     </div>
   );
 }

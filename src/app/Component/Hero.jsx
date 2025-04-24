@@ -1,16 +1,28 @@
+"use client"
 import React from 'react'
 import { MdArrowOutward } from "react-icons/md";
 import { FaBehance } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+
 
 const Hero = () => {
+    useGSAP(() => {
+        gsap.from('.left',{
+            x:-50,
+            duration:2,
+            autoAlpha:0,
+            
+        })
+    })
     return (
         <div className='' >
-            <div className=' container pt-[60px] pl-[152px]'>
+            <div className=' container pt-[60px]  left '>
                 <h3 className=' text-[32px] font-semibold flex items-center gap-6'> <hr className='w-[65px] text-[#080808]' /> Hello, I’m✌</h3>
-                <h1 className='relative font-syne leading-[110px] font-bold w-[463px]  text-[140px] pt-2  after:content-[""] after:size-[120px] after:rounded-full after:bg-yellow-400 after:absolute after:top-[6px] after:-left-[10px] after:z-[-1] w-[498px]'> <span className='bg-amber-300 w-[70px] h-[70px]'></span> <span>Ehsanul</span> Haque</h1>
+                <h1 className='relative font-syne leading-[110px] font-bold  text-[140px] pt-2  after:content-[""] after:size-[120px] after:rounded-full after:bg-yellow-400 after:absolute after:top-[6px] after:-left-[10px] after:z-[-1] w-[498px]'> <span className='bg-amber-300 w-[70px] h-[70px]'></span> <span>Ehsanul</span> Haque</h1>
                 <p className='pt-6 text-6 font-semibold font-syne'>Product Designer | Based in Bangladesh</p>
                 <div className='flex gap-[17px] pt-[30px] '>
                     <button className='flex gap-2 font-bold bg-black py-4 px-8 rounded-lg  text-white cursor-pointer hover:bg-transparent hover:text-black  hover:border ' >Let’s Talk <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </button>

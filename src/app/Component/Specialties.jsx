@@ -7,7 +7,7 @@ import { MdArrowOutward } from "react-icons/md";
 const Specialties = () => {
     return (
         <div>
-            <div className='container pl-[152px] pt-[120px] '>
+            <div className='container pt-[120px] '>
                 <div className='grid grid-cols-2'>
                     <div className=''>
                         <span className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne'>Services</span>

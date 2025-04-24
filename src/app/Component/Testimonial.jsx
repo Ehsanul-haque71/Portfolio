@@ -15,7 +15,7 @@ const Testimonial = () => {
   //   cssEase: "linear"
   // };
   return (
-    <div className='flex gap-[48px] container py-[120px] pl-[120px]'>
+    <div className='flex gap-[48px] container py-[120px] '>
       {/* left */}
       <div className='w-[340px]'>
         <p className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne'>Testimonial</p>

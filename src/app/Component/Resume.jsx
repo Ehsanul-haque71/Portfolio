@@ -4,7 +4,7 @@ import { MdArrowOutward } from "react-icons/md";
 const Resume = () => {
     return (
         <div className=' bg-[#0808080A] pt-[120px] pb-[120px]'>
-            <div className='container pl-[152px] grid grid-cols-2'>
+            <div className='container  grid grid-cols-2'>
                 {/* left */}
                 <div>
                     <p className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne'>Resume</p>

@@ -7,8 +7,8 @@ import { MdArrowOutward } from "react-icons/md";
 const Recent = () => {
     return (
         <div className=' bg-[#FFE9D9]'>
-            <div className='container px-[152px] py-[100px] '>
-                <div className=''>
+            <div className='container  py-[100px] '>
+                <div className='flex flex-col items-center justify-center'>
                     <p className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne '>Portfolio</p>
                     <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-2 pb-10 '>My recent work</h2>
                 </div>
@@ -36,7 +36,7 @@ const Recent = () => {
                         </div>
                     </div>
                 </div>
-                <button className="mt-[48px] gap-2 bg-black text-white w-full h-[56px] py-[16px] rounded-lg flex items-center justify-center font-DM_Sans cursor-pointer hover:text-white hover:bg-black border ">View All Project <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </button>
+                <button className="mt-[48px] gap-2 bg-black text-white w-full h-[56px] py-[16px] rounded-lg flex items-center justify-center font-DM_Sans cursor-pointer hover:text-black hover:bg-transparent border ">View All Project <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </button>
             </div>
         </div>
     )
