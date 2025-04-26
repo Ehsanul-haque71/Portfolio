@@ -7,6 +7,8 @@ import { FaDribbble } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import Image from 'next/image'
+import Man from '@/app/Assets/man.png'
 
 
 const Hero = () => {
@@ -19,8 +21,8 @@ const Hero = () => {
         })
     })
     return (
-        <div className='' >
-            <div className=' container pt-[60px]  left '>
+        <div className='flex' >
+            <div className=' container pt-[60px] left '>
                 <h3 className=' text-[32px] font-semibold flex items-center gap-6'> <hr className='w-[65px] text-[#080808]' /> Hello, I’m✌</h3>
                 <h1 className='relative font-syne leading-[110px] font-bold  text-[140px] pt-2  after:content-[""] after:size-[120px] after:rounded-full after:bg-yellow-400 after:absolute after:top-[6px] after:-left-[10px] after:z-[-1] w-[498px]'> <span className='bg-amber-300 w-[70px] h-[70px]'></span> <span>Ehsanul</span> Haque</h1>
                 <p className='pt-6 text-6 font-semibold font-syne'>Product Designer | Based in Bangladesh</p>
@@ -47,7 +49,9 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div>right</div>
+            <div className=''>
+                <Image src={Man} alt='Hero_item'/>
+            </div>
         </div>
     )
 }
