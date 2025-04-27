@@ -1,10 +1,17 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Syne } from 'next/font/google';
 import { DM_Sans } from 'next/font/google';
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Component/Navbar";
+import Footer from "./Component/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ['latin'],
+})
 
 const syne = Syne({
   variable: "--font-syne",
@@ -34,11 +41,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${syne.variable} ${dmSans.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${syne.variable} ${dmSans.variable} ${montserrat.variable} antialiased`}
       >
         <Navbar/>
         {children}
-        <footer>Footer</footer>
+        <Footer/>
       </body>
     </html>
   );

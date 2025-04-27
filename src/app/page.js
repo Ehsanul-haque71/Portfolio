@@ -6,6 +6,8 @@ import Recent from "./Component/Recent";
 import Testimonial from "./Component/Testimonial";
 import Ads from "./Component/Ads";
 import Blog from "./Component/Blog";
+import Pricing from "./Component/Pricing";
+
 
 
 export default function Home() {
@@ -18,6 +20,7 @@ export default function Home() {
       <Testimonial />
       <Ads/>
       <Blog/>
+      <Pricing/>
     </div>
   );
 }

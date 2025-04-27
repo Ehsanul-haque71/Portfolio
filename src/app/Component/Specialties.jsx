@@ -82,7 +82,7 @@ const Specialties = () => {
                     {/* right */}
                     <div className="bg-black rounded-2xl text-white ">
                         <div className="px-[24px] py-[36px]">
-                            <span className="">
+                            <span className=" flex justify-end">
                                 <MdArrowOutward className='w-6 h-6 text-[#FFB646] ' />
                             </span>
                             <div className="mt-[292px]">
@@ -129,6 +129,15 @@ const Specialties = () => {
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+                
             </div>
         </div>
     )
