@@ -7,8 +7,8 @@ import { FaDribbble } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import Image from 'next/image'
-import Man from '@/app/Assets/man.png'
+import Image from 'next/image';
+import Man from '@/app/Assets/man.png';
 
 
 const Hero = () => {

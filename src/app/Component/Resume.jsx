@@ -8,7 +8,7 @@ const Resume = () => {
                 {/* left */}
                 <div>
                     <p className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne'>Resume</p>
-                    <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-2' >All over my details find here...</h2>
+                    <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-2 relative after:size-[65px] after:rounded-full after:bg-[#FF9330] after:absolute after:top-[12px] after:left-[5px] after:z-[-2]' > <span className='absolute z-[13]'></span> <span>All </span>over my details find here...</h2>
                     <div className='pt-[18px]'>
                         <button className="bg-white text-black w-[416px] h-[56px] px-8 py-5 rounded-lg flex items-center justify-between font-DM_Sans cursor-pointer hover:text-white hover:bg-black border mb-2">About me <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </button>
                         <button className="bg-white text-black w-[416px] h-[56px] px-8 py-5 rounded-lg flex items-center justify-between font-DM_Sans cursor-pointer hover:text-white hover:bg-black border mb-2">Experience <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </button>

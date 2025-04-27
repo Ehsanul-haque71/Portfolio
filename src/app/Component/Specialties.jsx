@@ -11,7 +11,7 @@ const Specialties = () => {
                 <div className='grid grid-cols-2'>
                     <div className=''>
                         <span className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne'>Services</span>
-                        <h1 className='leading-[72px] text-[64px] font-bold font-syne pt-2'>My specialties</h1>
+                        <h1 className='leading-[72px] text-[64px] font-bold font-syne pt-2 relative after:size-[62px] after:rounded-full after:bg-[#FF9330] after:absolute after:top-[15px] after:left-[-2px] after:z-[-1]'><span className="absolute z-[100] "></span> <span>My</span> specialties</h1>
                     </div>
                     <div className='text-[18px] leading-[28px] font-normal font-DM_Sans items-center w-[636px] pt-[30px] text-[#08080899]'>
                         Synergistically seize front-end methods of empowerment without extensive core competencies. Progressively repurpose alternative platforms
