@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className='flex gap-6'>
                     {/* left */}
                     <div>
-                        <h2 className='font-bold font-syne text-[64px] leading-[72px] pb-10 text-[#FFFFFF] w-[416px]'>Let’s work together</h2>
+                        <h2 className='font-bold font-syne text-[64px] leading-[72px] pb-10 text-[#FFFFFF] w-[416px] relative after:absolute after:size-[65px] after:rounded-full after:top-[5px] after:left-[0px] z-[1] after:z-[-1] after:bg-[#FFB646]'>Let’s work together</h2>
                         <div className='flex items-center'>
                             <div className='text-white'>
                                 <p className=' text-5 leading-7 font-semibold font-syne'> Based in Bangladesh |</p>

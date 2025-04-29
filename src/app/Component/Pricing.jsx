@@ -7,7 +7,7 @@ const Pricing = () => {
             <div className='flex items-center justify-between'>
                 <div className='w-[527px]'>
                     <p className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne'>Pricing</p>
-                    <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-[10px]'>Stay chill and pick your plan</h2>
+                    <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-[10px] relative after:absolute after:rounded-full after:top-[85px] after:left-[325px] z-[1] after:z-[-1] after:bg-[#FF9330] after:size-[65px]'>Stay chill and pick your plan</h2>
                 </div>
                 <button className='flex gap-2 font-bold bg-black py-4 px-8 rounded-lg  text-white cursor-pointer hover:bg-transparent hover:text-black hover:border mt-[126px]'>Contact for Custom Project <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </button>
             </div>

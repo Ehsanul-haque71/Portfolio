@@ -11,7 +11,7 @@ const Blog = () => {
         <section className='container py-[120px]'>
             <div className='flex flex-col items-center justify-center'>
                 <p className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne'>Blog</p>
-                <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-[10px]'>My blog post</h2>
+                <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-[10px] relative after:absolute after:size-[65px] after:bg-[#FF9330] z-[7] after:z-[-7] after:top-[17px] after:right-[65px] after:rounded-full'>My blog post</h2>
             </div>
             <div className='grid grid-cols-4 gap-6'>
                 {/* blog_1 */}

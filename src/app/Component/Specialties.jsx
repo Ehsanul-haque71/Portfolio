@@ -101,7 +101,7 @@ const Specialties = () => {
                     <div>
                         <div>
                             <p className="leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne pb-[10px]">Hello I’m</p>
-                            <h3 className="leading-[72px] text-[64px] font-bold font-syne pt-2">
+                            <h3 className="leading-[72px] text-[64px] font-bold font-syne pt-2 relative after:absolute after:rounded-full after:size-[62px] after:bg-[#FF9330] after:top-[10px] after:right-[545px] after:z-[-3]">
                                 Ehsanul Haque, Product Designer
                             </h3>
                             <h4 className="leading-[54px] text-[44px] font-bold font-syne pt-3">Based in Bangladesh

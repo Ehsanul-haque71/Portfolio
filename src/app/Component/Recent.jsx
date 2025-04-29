@@ -6,11 +6,12 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Recent = () => {
     return (
-        <div className=' bg-[#FFE9D9]'>
+        // 
+        <div className='bg-[#FFE9D9] '>
             <div className='container  py-[100px] '>
                 <div className='flex flex-col items-center justify-center'>
                     <p className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne '>Portfolio</p>
-                    <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-2 pb-10 '>My recent work</h2>
+                    <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-2 pb-10 relative  after:absolute after:rounded-full after:size-[62px] after:top-[13px] after:right-[116px] z-[1] after:bg-[#FF9330] after:z-[-1]'> <span>My recent work</span></h2>
                 </div>
                 <div className='grid grid-cols-2 gap-6'>
                     <div className=''>

@@ -19,7 +19,7 @@ const Testimonial = () => {
       {/* left */}
       <div className='w-[340px]'>
         <p className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne'>Testimonial</p>
-        <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-2 '>Client feedback</h2>
+        <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-2 relative after:absolute after:bg-[#FF9330] after:rounded-full after:size-[62px] after:top-[10px] after:left-[0px] z-[10] after:z-[-10]'>Client feedback</h2>
       </div>
       {/* right */}
       <div className='flex  gap-[48px]'>
