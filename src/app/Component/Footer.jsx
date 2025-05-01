@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className='flex gap-6'>
                     {/* left */}
                     <div>
-                        <h2 className='font-bold font-syne text-[64px] leading-[72px] pb-10 text-[#FFFFFF] w-[416px] relative after:absolute after:size-[65px] after:rounded-full after:top-[5px] after:left-[0px] z-[1] after:z-[-1] after:bg-[#FFB646]'>Let’s work together</h2>
+                        <h2 className='font-bold font-syne text-[64px] leading-[72px] pb-10 text-[#FFFFFF] w-[416px] relative after:absolute after:size-[65px] after:rounded-full after:top-[5px] after:left-[0px] z-[1] after:z-[-1] after:bg-[#FFB646]  pt-[48px]'>Let’s work together</h2>
                         <div className='flex items-center'>
                             <div className='text-white'>
                                 <p className=' text-5 leading-7 font-semibold font-syne'> Based in Bangladesh |</p>
@@ -38,7 +38,7 @@ const Footer = () => {
                             <div className='flex items-end justify-between '>
                                 <h4 className='font-syne text-[24px] leading-8 text-[#FFB646] flex flex-col'>
                                     hello@ehsanul.com</h4>
-                                <span> <MdArrowOutward className='w-6 h-6 text-[#08080899] text-white group-hover:text-[#FF9330]' /> </span>
+                                <span> <MdArrowOutward className='w-6 h-6  text-white group-hover:text-[#FF9330]' /> </span>
                             </div>
                         </div>
 
@@ -63,7 +63,9 @@ const Footer = () => {
                         <h1 className='w-[1280px] '>EHSANUL HAQUE</h1>
                     </div>
                 </div>
+
                 <hr className='w-[1296px] text-[#FFFFFF33]' />
+                
                 <div className='flex items-center justify-between pt-6'>
                     <div>
                         <p className='font-DM_Sans text-[18px] leading-7 text-white'>©2023 Ehsanul Haque, All Rights Reserved</p>

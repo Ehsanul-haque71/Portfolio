@@ -19,9 +19,9 @@ const Specialties = () => {
 
 
 
-            <div className="flex items-center  gap-6 ">
+            <div className=" grid grid-cols-1 lg:grid-cols-[auto_1fr]  gap-6 ">
                 <div className="grid grid-cols-3 gap-6">
-                    <div className="bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px] flex flex-col justify-between hover:shadow-lg transition w-[270px] group hover:cursor-pointer">
+                    <div className="bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px] flex flex-col justify-between hover:shadow-lg transition  group hover:cursor-pointer">
                         <div className="w-12 h-12 bg-white group-hover:bg-[#0808080A] rounded-full items-center justify-center flex ">
                             <Image src={android} alt="logo" />
                         </div>
@@ -31,7 +31,7 @@ const Specialties = () => {
                         </div>
                     </div>
 
-                    <div className="bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px] flex flex-col justify-between hover:shadow-lg transition w-[270px] h-[192px] group hover:cursor-pointer">
+                    <div className="bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px] flex flex-col justify-between hover:shadow-lg transition  group hover:cursor-pointer">
                         <div className="w-12 h-12 bg-white group-hover:bg-[#0808080A] rounded-full items-center justify-center flex ">
                             <Image src={android} alt="logo" />
                         </div>
@@ -43,7 +43,7 @@ const Specialties = () => {
                         </div>
                     </div>
 
-                    <div className="bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px] flex flex-col justify-between hover:shadow-lg transition w-[270px] h-[192px] group hover:cursor-pointer">
+                    <div className="bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px] flex flex-col justify-between hover:shadow-lg transition  group hover:cursor-pointer">
                         <div className="w-12 h-12 bg-white group-hover:bg-[#0808080A] rounded-full items-center justify-center flex ">
                             <Image src={android} alt="logo" />
                         </div>
@@ -53,7 +53,7 @@ const Specialties = () => {
                         </div>
                     </div>
 
-                    <div className="bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px] flex flex-col justify-between hover:shadow-lg transition w-[270px] h-[192px] group hover:cursor-pointer">
+                    <div className="bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px] flex flex-col justify-between hover:shadow-lg transition  group hover:cursor-pointer">
                         <div className="w-12 h-12 bg-white group-hover:bg-[#0808080A] rounded-full items-center justify-center flex ">
                             <Image src={android} alt="logo" />
                         </div>
@@ -63,7 +63,7 @@ const Specialties = () => {
                         </div>
                     </div>
 
-                    <div className="bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px] flex flex-col justify-between hover:shadow-lg transition w-[270px] h-[192px] group hover:cursor-pointer">
+                    <div className="bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px] flex flex-col justify-between hover:shadow-lg transition  group hover:cursor-pointer">
                         <div className="w-12 h-12 bg-white group-hover:bg-[#0808080A] rounded-full items-center justify-center flex ">
                             <Image src={android} alt="logo" />
                         </div>
@@ -73,7 +73,7 @@ const Specialties = () => {
                         </div>
                     </div>
 
-                    <div className="bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px] flex flex-col justify-between hover:shadow-lg transition w-[270px] h-[192px] group hover:cursor-pointer">
+                    <div className="bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px] flex flex-col justify-between hover:shadow-lg transition  group hover:cursor-pointer">
                         <div className="w-12 h-12 bg-white group-hover:bg-[#0808080A] rounded-full items-center justify-center flex ">
                             <Image src={android} alt="logo" />
                         </div>
