@@ -1,59 +1,82 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { MdArrowOutward } from 'react-icons/md'
-import offcanvas_logo from '@/app/Assets/offcanvas-logo.png'
+import { MdArrowOutward } from 'react-icons/md';
+import { VscClose } from "react-icons/vsc";
+import { PiAlignRightBold } from "react-icons/pi";
+
+import { FaBehance } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaDribbble } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 
-const SlideMenu = ({onMenuToggle}) => {
+const SlideMenu = ({ onMenuToggle }) => {
 
 
     return (
         <div className='pl-8 h-screen bg-black w-[458px] fixed top-0 right-0 z-[1001]'>
-            <div className='flex justify-between gap-2 items-center border-b border-b-white/50'>
-                <span>
-                    <Image src={offcanvas_logo} alt="logo" />
-                </span>
-                <button className='flex items-center justify-center bg-amber-400 p-2 w-[100px] h-[80px]' onClick={onMenuToggle}>
-                    <span className='w-1 h-5 bg-white rotate-[45deg]'></span>
-                    <span className='w-1 h-5 bg-white rotate-[-45deg]'></span>
-                </button>
+            <div className='mb-[80px]'>
+                <div className='flex justify-between gap-2 items-center border-b border-b-white/50'>
+                    <span className='flex items-center justify-center font-syne font-bold text-[24px] gap-2'>
+                        <span className='text-white'><PiAlignRightBold /></span>
+                        <p className='text-white'>EHSANUL</p>
+                    </span>
+                    <button className='flex items-center justify-center bg-amber-400 p-2 w-[100px] h-[80px]' onClick={onMenuToggle}>
+                        <span className=' text-white'><VscClose className='w-[35px] h-[35px]' /></span>
+                        {/* <span className='w-1 h-5 bg-white rotate-[-45deg]'></span> */}
+                    </button>
+                </div>
+                <div className='pr-8 pb-10 pt-20'>
+                    <ul className='flex flex-col gap-2 text-white '>
+                        <li className='border-b border-b-white/50 group hover:cursor-pointer'>
+                            <Link href={"/"} className='flex justify-between gap-1.5 items-center py-4 font-syne font-bold text-[20px] leading-7 group-hover:text-[#FF9330]'>
+                                Home
+                                <span>
+                                    <MdArrowOutward />
+                                </span>
+                            </Link>
+                        </li>
+                        <li className='border-b border-b-white/50 group hover:cursor-pointer '>
+                            <Link href={"/about"} className='flex justify-between gap-1.5 items-center py-4 font-syne font-bold text-[20px] leading-7 group-hover:text-[#FF9330]'>
+                                About
+                                <span>
+                                    <MdArrowOutward />
+                                </span>
+                            </Link>
+                        </li>
+                        <li className='border-b border-b-white/50 group hover:cursor-pointer'>
+                            <Link href={"/"} className='flex justify-between gap-1.5 items-center py-4 font-syne font-bold text-[20px] leading-7 group-hover:text-[#FF9330]'>
+                                Project
+                                <span>
+                                    <MdArrowOutward />
+                                </span>
+                            </Link>
+                        </li>
+                        <li className='border-b border-b-white/50  group hover:cursor-pointer'>
+                            <Link href={"/"} className='flex justify-between gap-1.5 items-center py-4 font-syne font-bold text-[20px] leading-7 group-hover:text-[#FF9330]'>
+                                Blog
+                                <span>
+                                    <MdArrowOutward />
+                                </span>
+                            </Link>
+                        </li>
+                        <li className='border-b border-b-white/50 group hover:cursor-pointer hover:text-[#FF9330] transition duration-300'>
+                            <Link href={"/"} className='flex justify-between gap-1.5 items-center py-4 font-syne font-bold text-[20px] leading-7  group-hover:animate-arrow-move-up'>
+                                Contact
+                                <span>
+                                    <MdArrowOutward />
+                                </span>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div className='pr-8 pb-10 pt-20'>
-                <ul className='flex flex-col gap-2 text-white'>
-                    <li className='border-b border-b-white/50'>
-                        <Link href={"/"} className='flex justify-between gap-1.5 items-center py-4'>
-                            Home
-                            <span>
-                                <MdArrowOutward />
-                            </span>
-                        </Link>
-                    </li>
-                    <li className='border-b border-b-white/50'>
-                        <Link href={"/"} className='flex justify-between gap-1.5 items-center py-4'>
-                            Home
-                            <span>
-                                <MdArrowOutward />
-                            </span>
-                        </Link>
-                    </li>
-                    <li className='border-b border-b-white/50'>
-                        <Link href={"/"} className='flex justify-between gap-1.5 items-center py-4'>
-                            Home
-                            <span>
-                                <MdArrowOutward />
-                            </span>
-                        </Link>
-                    </li>
-                    <li className=''>
-                        <Link href={"/"} className='flex justify-between gap-1.5 items-center py-4'>
-                            Home
-                            <span>
-                                <MdArrowOutward />
-                            </span>
-                        </Link>
-                    </li>
-                </ul>
+            <div className='flex gap-4 text-white '>
+                <FaBehance className='w-[24px] h-[24px] ' />
+                <FaLinkedinIn className='w-[24px] h-[24px]' />
+                <FaDribbble className='w-[24px] h-[24px] ' />
+                <FaGithub className='w-[24px] h-[24px] ' />
             </div>
         </div>
     )

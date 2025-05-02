@@ -137,7 +137,7 @@ const Specialties = () => {
                             <p className="leading-[28px] text-[18px] text-[#08080899]">Worldwide client</p>
                         </div>
                         <div>
-                            <h7 className="leading-[40px] text-[32px] font-bold font-syne">3.5k</h7>
+                            <h3 className="leading-[40px] text-[32px] font-bold font-syne">3.5k</h3>
                             <p className="leading-[28px] text-[18px] text-[#08080899]">Job done successfully</p>
                         </div>
                         <div className="pt-[36px]  w-[253px] h-[56px] mb-[120px]">
