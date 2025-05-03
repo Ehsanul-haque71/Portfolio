@@ -4,7 +4,6 @@ import React from 'react'
 import { MdArrowOutward } from 'react-icons/md';
 import { VscClose } from "react-icons/vsc";
 import { PiAlignRightBold } from "react-icons/pi";
-
 import { FaBehance } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";

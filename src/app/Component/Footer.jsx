@@ -16,7 +16,7 @@ const Footer = () => {
                         <h2 className='font-bold font-syne text-[64px] leading-[72px] pb-10 text-[#FFFFFF] w-[416px] relative after:absolute after:size-[62px] after:rounded-full after:top-[53px] after:left-[2px] z-[1] after:z-[-1] after:bg-[#FFB646]  pt-[48px]'>Let’s work together</h2>
                         <div className='flex items-center'>
                             <div className='text-white'>
-                                <p className=' text-5 leading-7 font-semibold font-syne'> Based in Bangladesh |</p>
+                                <p className=' text-xl leading-7 font-semibold font-syne'> Based in Bangladesh |</p>
                             </div>
                             <div className='flex gap-4 pl-[11px] text-white '>
                                 <FaBehance className='w-[24px] h-[24px] hover:text-[#FF9330]  hover:text-[#FF9330]' />

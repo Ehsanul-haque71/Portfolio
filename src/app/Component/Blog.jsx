@@ -31,7 +31,7 @@ const Blog = () => {
                     </div>
                     <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
                         <div className='w-[185px]'>
-                            <h3 className='font-syne text-6 leading-8 font-bold  '>Right-lo-left behind development in mobile web design</h3>
+                            <h3 className='font-syne text-2xl leading-8 font-bold  '>Right-lo-left behind development in mobile web design</h3>
                         </div>
                         <span ><MdArrowOutward className='w-6 h-6' /></span>
                     </div>
@@ -58,7 +58,7 @@ const Blog = () => {
                     </div>
                     <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330]'>
                         <div className='w-[185px]'>
-                            <h3 className='font-syne text-6 leading-8 font-bold  '>Connect craft: Reading the smart experience</h3>
+                            <h3 className='font-syne text-2xl leading-8 font-bold  '>Connect craft: Reading the smart experience</h3>
                         </div>
                         <span ><MdArrowOutward className='w-6 h-6' /></span>
                     </div>
@@ -82,7 +82,7 @@ const Blog = () => {
                     </div>
                     <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
                         <div className='w-[185px]'>
-                            <h3 className='font-syne text-6 leading-8 font-bold  '>Ecoglow: Sustainable skincare a brighter tomorrow</h3>
+                            <h3 className='font-syne text-2xl leading-8 font-bold  '>Ecoglow: Sustainable skincare a brighter tomorrow</h3>
                         </div>
                         <span ><MdArrowOutward className='w-6 h-6' /></span>
                     </div>
@@ -106,7 +106,7 @@ const Blog = () => {
                     </div>
                     <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
                         <div className='w-[185px]'>
-                            <h3 className='font-syne text-6 leading-8 font-bold  '>Right-lo-left behind development in mobile web design</h3>
+                            <h3 className='font-syne text-2xl leading-8 font-bold  '>Right-lo-left behind development in mobile web design</h3>
                         </div>
                         <span ><MdArrowOutward className='w-6 h-6' /></span>
                     </div>
