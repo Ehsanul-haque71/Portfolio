@@ -1,18 +1,20 @@
 import React from 'react'
 import Image from 'next/image'
 import year from "@/app/Assets/Year.svg"
+import video from "@/app/Assets/videoforpic.jpg"
+import { IoPlay } from "react-icons/io5";
 import { MdArrowOutward } from "react-icons/md";
+
 
 const Vision = () => {
     return (
         <div className='bg-white'>
             <div className='container py-[120px]'>
-                <div className=' grid grid-cols-2 items-center gap-[134px]'>
+                <div className=' grid grid-cols-2 items-end gap-[134px]'>
                     <div className='max-w-[526px]'>
                         <h2 className='font-bold font-syne text-[65px] leading-[72px] pb-6'>My vision is to create happy my clients</h2>
-                        <p className='font-DM_Sans font-normal text-[18px] leading-[28px] text-[#08080899]'>That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not only reflects who you are and what you stand for, but words that truly land with those that read them, calling your audience in and making
-                            them want more.</p>
-                        <div className='grid grid-cols-3 gap-[41px]'>
+                        <p className='font-DM_Sans font-normal text-[18px] leading-[28px] text-[#08080899] mr-8'>That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not only reflects who you are and what you stand for, but words that truly land with those that read them, calling your audience in and making them want more.</p>
+                        <div className='grid grid-cols-3 gap-[30px]'>
                             <div>
                                 <span className='font-bold font-syne text-[32px] leading-[40px]'>08</span>
                                 <p>Award winner</p>
@@ -27,12 +29,15 @@ const Vision = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h2 className='font-bold font-syne text-[88px] leading-[80px] pb-1 relative after:absolute after:rounded-full after:size-[100px] after:bg-amber-400 z-[1] after:z-[-1] after:-top-[-4px] after:right-[484px]'>12+</h2>
+
+                    <div className='flex flex-col '>
+                        <h2 className='font-bold font-syne text-[88px] leading-[80px]  relative after:absolute after:rounded-full after:size-[100px] after:bg-amber-400 z-[1] after:z-[-1] after:-top-[-45px] after:right-[482px] pt-[54px]'>12+</h2>
                         {/* <h3 className='font-bold font-syne text-[64px] leading-[72px] 
                          '>Years of experience</h3> */}
-                        <Image src={year} alt='year of experience' />
-                        <div className="bg-black rounded-2xl text-white w-full mt-[48px]">
+                        <div className='mt-[20px]'>
+                        <Image  src={year} alt='year of experience' />
+                        </div>
+                        <div className="bg-black rounded-2xl text-white w-full mt-[38px]">
                             <div className="px-[24px] py-[24px] flex items-end justify-between">
                                 <div className=" flex flex-col">
                                     <p className="text-[#FFB646] text-[18px] leading-7 font-DM_Sans">SAY HELLO!</p>
@@ -47,7 +52,13 @@ const Vision = () => {
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div className=' mt-[108px] relative z-[1]'>
+                    <Image className='rounded-2xl h-[668px]' src={video} alt='video'/>
+                    <div className=' absolute z-[10] top-[50%] left-[50%] w-[80px] h-[80px] bg-amber-500 rounded-full flex items-center justify-center translate-x-[-50%] translate-y-[-50%]'>
+                        {/* <Image src={play} alt='playButton'/> */}
+                        <IoPlay />
+                    </div>
                 </div>
             </div>
         </div>
