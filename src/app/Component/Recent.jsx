@@ -1,7 +1,7 @@
-import React from 'react'
-import Image from 'next/image'
-import Por_left from "@/app/Assets/Por_left.jpg"
-import Por_right from "@/app/Assets/Por_right.jpg"
+import React from 'react';
+import Image from 'next/image';
+import Por_left from "@/app/Assets/Por_left.jpg";
+import Por_right from "@/app/Assets/Por_right.jpg";
 import { MdArrowOutward } from "react-icons/md";
 
 const Recent = () => {

@@ -99,13 +99,6 @@ const Specialties = () => {
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
             </div>
 
 

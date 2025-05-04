@@ -45,7 +45,7 @@ const SlideMenu = ({ onMenuToggle }) => {
                             </Link>
                         </li>
                         <li className='border-b border-b-white/50 group hover:cursor-pointer'>
-                            <Link href={"/"} className='flex justify-between gap-1.5 items-center py-4 font-syne font-bold text-[20px] leading-7 group-hover:text-[#FF9330]'>
+                            <Link href={"/project"} className='flex justify-between gap-1.5 items-center py-4 font-syne font-bold text-[20px] leading-7 group-hover:text-[#FF9330]'>
                                 Project
                                 <span>
                                     <MdArrowOutward />
