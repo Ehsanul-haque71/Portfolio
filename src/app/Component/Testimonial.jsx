@@ -56,8 +56,7 @@ const Testimonial = () => {
             <h5 className=' font-extrabold font-syne text-[18px] leading-[28px]'>Jhon Smith</h5>
           </div>
         </div>
-
-        
+ 
       </div>
 
       <div className='w-[1000px]'>
