@@ -11,7 +11,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Project = () => {
   return (
-    <div >
+    <div className=''>
       <div className='container pt-[160px] pb-[120px]'>
         <div>
           <div className='flex flex-col items-center justify-center'>

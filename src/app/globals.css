@@ -16,3 +16,7 @@
 .container {
     margin:0 auto;
 }
+
+.custom_square {
+  list-style-type: square;
+}

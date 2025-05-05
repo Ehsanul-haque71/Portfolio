@@ -5,6 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { HiArrowSmUp } from "react-icons/hi";
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -70,10 +71,10 @@ const Footer = () => {
                     <div>
                         <p className='font-DM_Sans text-[18px] leading-7 text-white'>©2023 Ehsanul Haque, All Rights Reserved</p>
                     </div>
-                    <div className='flex'>
+                    <Link href={"/"} className='flex'>
                         <p className='font-DM_Sans text-[18px] leading-7 text-white'>Back to Top</p>
                         <span><HiArrowSmUp className='w-6 h-6 text-[#FFB646]'/></span>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </footer>

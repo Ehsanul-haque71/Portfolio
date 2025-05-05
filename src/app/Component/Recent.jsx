@@ -4,14 +4,14 @@ import Por_left from "@/app/Assets/Por_left.jpg";
 import Por_right from "@/app/Assets/Por_right.jpg";
 import { MdArrowOutward } from "react-icons/md";
 
-const Recent = () => {
+const Recent = ({button=true, className, sectionTitle}) => {
     return (
         // 
-        <div className='bg-[#FFE9D9] '>
+        <div className={className}>
             <div className='container  py-[100px] '>
                 <div className='flex flex-col items-center justify-center'>
                     <p className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne '>Portfolio</p>
-                    <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-2 pb-10 relative  after:absolute after:rounded-full after:size-[62px] after:top-[13px] after:right-[116px] z-[1] after:bg-[#FF9330] after:z-[-1]'> <span>My recent work</span></h2>
+                    <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-2 pb-10 relative  after:absolute after:rounded-full after:size-[62px] after:top-[13px] after:right-[116px] z-[1] after:bg-[#FF9330] after:z-[-1]'> <span>{sectionTitle}</span></h2>
                 </div>
                 <div className='grid grid-cols-2 gap-6'>
                     <div className=''>
@@ -37,7 +37,7 @@ const Recent = () => {
                         </div>
                     </div>
                 </div>
-                <button className="mt-[48px] gap-2 bg-black text-white w-full h-[56px] py-[16px] rounded-lg flex items-center justify-center font-DM_Sans cursor-pointer hover:text-black hover:bg-transparent border ">View All Project <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </button>
+                {button && <button className="mt-[48px] gap-2 bg-black text-white w-full h-[56px] py-[16px] rounded-lg flex items-center justify-center font-DM_Sans cursor-pointer hover:text-black hover:bg-transparent border ">View All Project <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </button>}
             </div>
         </div>
     )

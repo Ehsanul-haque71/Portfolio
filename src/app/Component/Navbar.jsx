@@ -17,11 +17,12 @@ const Navbar = () => {
   const handleMenu = () => {
     setSideMenu(!sideMenu)
   }
+
   const pathname = usePathname();
 
   return (
     <>
-      <nav className={`${pathname==="/about"?"bg-white": "bg-transparent"} absolute w-full z-[1000]`}>
+      <nav className={`${pathname==="/about"?"bg-white": "bg-transparent"} ${pathname==="/project"?"bg-white": "bg-transparent"} ${pathname==="/details"?"bg-white": "bg-transparent"} ${pathname==="/Blogs"?"bg-white": "bg-transparent"} ${pathname==="/blogdetails"?"bg-white": "bg-transparent"} absolute w-full z-[1000]`}>
         <div className='flex justify-between items-center border-b-[1px] border-[#00000033] '>
           <div className='flex gap-2 pt-6 pb-6 pl-6'>
             <Image src={logo} className='w-8 h-8 gap-2' alt='logo' />
@@ -37,7 +38,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {sideMenu && <SlideMenu onMenuToggle={handleMenu} />}
+      {sideMenu && <SlideMenu onMenuToggle={handleMenu} sideMenu={sideMenu} setSideMenu={setSideMenu} />}
     </>
 
   )
