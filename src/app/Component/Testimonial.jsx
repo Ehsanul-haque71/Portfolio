@@ -1,9 +1,26 @@
-import React from 'react'
+"use client"
+
 import Image from 'next/image'
 import Qutation from '@/app/Assets/Qutation.svg'
-// import Slider from "react-slick";
+import Slider from 'react-slick'
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Testimonial = () => {
+  const settings = {
+    className: "center",
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
+    swipeToSlide: true,
+    afterChange: function(index) {
+      console.log(
+        `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
+      );
+    }
+  }
+
   // const settings = {
   //   dots: true,
   //   infinite: true,
@@ -22,8 +39,9 @@ const Testimonial = () => {
         <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-2 relative after:absolute after:bg-[#FF9330] after:rounded-full after:size-[62px] after:top-[10px] after:left-[0px] z-[10] after:z-[-10]'>Client feedback</h2>
       </div>
       {/* right */}
+      <div className='w-[1000px]'>
+      <Slider {...settings}>
       <div className='flex  gap-[48px]'>
-
         <div className='w-[306px] h-[336px]'>
           <span>
             <Image src={Qutation} alt='logo' />
@@ -34,7 +52,9 @@ const Testimonial = () => {
             <h5 className=' font-extrabold font-syne text-[18px] leading-[28px]'>Jhon Smith</h5>
           </div>
         </div>
+      </div>
 
+      <div className='flex  gap-[48px]'>
         <div className='w-[306px] h-[336px]'>
           <span>
             <Image src={Qutation} alt='' />
@@ -45,7 +65,9 @@ const Testimonial = () => {
             <h5 className=' font-extrabold font-syne text-[18px] leading-[28px]'>Jhon Smith</h5>
           </div>
         </div>
+      </div>
 
+      <div className='flex  gap-[48px]'>
         <div className='w-[306px] h-[336px]'>
           <span>
             <Image src={Qutation} alt='' />
@@ -56,11 +78,8 @@ const Testimonial = () => {
             <h5 className=' font-extrabold font-syne text-[18px] leading-[28px]'>Jhon Smith</h5>
           </div>
         </div>
- 
       </div>
-
-      <div className='w-[1000px]'>
-        
+      </Slider>
       </div>
     </div>
   )

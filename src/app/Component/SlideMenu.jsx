@@ -110,7 +110,7 @@ useEffect(()=> {
                         </li>
 
                         <li className='border-b border-b-white/50 group hover:cursor-pointer hover:text-[#FF9330] transition duration-300'>
-                            <Link href={"/"} className='flex justify-between gap-1.5 items-center py-4 font-syne font-bold text-[20px] leading-7  group-hover:animate-arrow-move-up'>
+                            <Link href={"contacts"} className='flex justify-between gap-1.5 items-center py-4 font-syne font-bold text-[20px] leading-7  group-hover:animate-arrow-move-up'>
                                 Contact
                                 <span>
                                     <MdArrowOutward />
