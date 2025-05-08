@@ -86,17 +86,18 @@ const ContactMe = () => {
                                 </div>
                             </div>
                             <div className='pt-[20px] pb-[74px] '>
-                                <button className='flex gap-2 font-bold bg-black py-4 px-8 rounded-lg  text-white cursor-pointer hover:bg-transparent hover:text-black  hover:border ' >Submit <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </button>
+                                <button className='flex gap-2 font-bold bg-black py-4 px-8 rounded-lg  text-white cursor-pointer hover:bg-transparent hover:text-black border ' >Submit <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </button>
                             </div>
 
-                            <div className=' '>
-                                <div className='max-w-[110px]'>
-                                    <hr className='text-red-500' />
+                            <div className=' flex  items-center'>
+                                <div className=' flex items-center gap-5'>
+                                    <hr className='text-[#0808081A] w-[110px]' />
+                                    <p className='text-[20px] leading-7 font-bold font-syne'>Follow me</p>
                                 </div>
 
                                 <div className='flex items-center gap-[32px]'>
                                     <div>
-                                        <p className='text-[20px] leading-7 font-bold font-syne'>Follow me</p>
+                                        
                                     </div>
                                     <div className=' flex gap-[20px] '>
                                         < FaBehance className='w-[28px] h-[28px]'/>
