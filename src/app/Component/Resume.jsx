@@ -41,6 +41,10 @@ const Resume = () => {
                     {
                         Component === "Experience" && <Experience />
                     }
+
+                    {
+                        Component === "Education" && <Education />
+                    }
                 </div>
             </div>
         </div>
@@ -126,7 +130,7 @@ const Experience = () => {
                         </div>
                         <h2 className='font-bold font-syne text-[24px] leading-8'>Lead digital marketer</h2>
                     </div>
-                </div>               
+                </div>
             </div>
             <div className='grid grid-cols-2 items-center justify-between gap-4 pt-[20px]'>
                 <div className='bg-[#0808080A] rounded-2xl hover:bg-white px-[24px] pb-[24px] pt-[30px] '>
@@ -152,8 +156,16 @@ const Experience = () => {
                         </div>
                         <h2 className='font-bold font-syne text-[24px] leading-8'>Lead digital marketer</h2>
                     </div>
-                </div>               
+                </div>
             </div>
+        </div>
+    )
+}
+
+const Education = () => {
+    return (
+        <div>
+            <p className='font-bold font-syne text-[32px] leading-8 pb-[24px]'>Education</p>
         </div>
     )
 }
