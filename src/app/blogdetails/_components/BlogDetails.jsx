@@ -47,7 +47,7 @@ const BlogDetails = () => {
                                 </div>
                                 <div >
                                     <p className='pb-[8px] text-[14px] text-black leading-[20px]'>Written by</p>
-                                    <p className='font-DM_Sans font-bold text-[15px] leading-4'>Mark Henry</p>
+                                    <p className='font-DM_Sans font-bold text-[15px] leading-4'>Ehsanul Haque</p>
                                 </div>
                             </div>
 

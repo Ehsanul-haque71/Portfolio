@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Syne } from 'next/font/google';
-// import { DM_Sans } from 'next/font/google';
+import { DM_Sans } from 'next/font/google';
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Component/Navbar";
@@ -17,10 +17,10 @@ const syne = Syne({
   variable: "--font-syne",
   subsets: ['latin'],
 })
-// const dmSans = DM_Sans({
-//   variable: "--font-dmsans",
-//   subsets: ['latin'],
-// })
+const dmSans = DM_Sans({
+  variable: "--font-dmsans",
+  subsets: ['latin'],
+})
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,9 +41,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${syne.variable}  ${montserrat.variable} antialiased`}  
+        className={`${geistSans.variable} ${geistMono.variable} ${syne.variable} ${dmSans.variable} ${montserrat.variable} antialiased`}  
       >
-          {/* ${dmSans.variable} */}
+          
         
         <Navbar/>
         {children}

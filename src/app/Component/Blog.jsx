@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 import { MdArrowOutward } from "react-icons/md";
 import Blog1 from '@/app/Assets/Blog1.png'
 import Blog2 from '@/app/Assets/Blog2.png'
@@ -30,12 +31,12 @@ const Blog = () => {
                         </div>
                     </div>
 
-                    <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
+                    <Link href={"/blogdetails"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
                         <div >
                             <h3 className='font-syne text-2xl leading-8 font-bold  '>Right-lo-left behind development in mobile web design</h3>
                         </div>
                         <span ><MdArrowOutward className='w-6 h-6' /></span>
-                    </div>
+                    </Link>
                 </div>
 
                 {/* blog_2 */}
@@ -54,12 +55,12 @@ const Blog = () => {
                         </div>
                     </div>
 
-                    <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330]'>
+                    <Link href={"/blogdetails"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330]'>
                         <div >
                             <h3 className='font-syne text-2xl leading-8 font-bold  '>Connect craft: Reading the smart experience</h3>
                         </div>
                         <span ><MdArrowOutward className='w-6 h-6' /></span>
-                    </div>
+                    </Link>
                 </div>
 
 
@@ -78,12 +79,12 @@ const Blog = () => {
                             <p className='text-[14px] text-[#FF9330] leading-[20px]'>03 May 2019</p>
                         </div>
                     </div>
-                    <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
+                    <Link href={"/blogdetails"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
                         <div>
                             <h3 className='font-syne text-2xl leading-8 font-bold  '>Ecoglow: Sustainable skincare a brighter tomorrow</h3>
                         </div>
                         <span ><MdArrowOutward className='w-6 h-6' /></span>
-                    </div>
+                    </Link>
                 </div>
 
 
@@ -103,12 +104,12 @@ const Blog = () => {
                         </div>
                     </div>
 
-                    <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
+                    <Link href={"/blogdetails"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
                         <div>
                             <h3 className='font-syne text-2xl leading-8 font-bold  '>Right-lo-left behind development in mobile web design</h3>
                         </div>
                         <span ><MdArrowOutward className='w-6 h-6' /></span>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </section>

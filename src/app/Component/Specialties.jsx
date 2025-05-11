@@ -1,12 +1,17 @@
 import Image from "next/image";
 import React from 'react'
-import android from '@/app/Assets/android.svg'
+import Link from "next/link";
 import twelve from '@/app/Assets/twelve_plus.svg'
 import { MdArrowOutward } from "react-icons/md";
 import ServiceCard from "./ServiceCard";
 
 import service_icon_1 from '@/app/Assets/android.svg'
-import Link from "next/link";
+import service_icon_2 from '@/app/Assets/Ui_Ux.svg'
+import service_icon_3 from '@/app/Assets/cart.svg'
+import service_icon_4 from '@/app/Assets/web.svg'
+import service_icon_5 from '@/app/Assets/brand.svg'
+import service_icon_6 from '@/app/Assets/touch.svg'
+
 
 
 const serviceData = [
@@ -17,28 +22,27 @@ const serviceData = [
     },
     {
         id: 2,
-        icon: service_icon_1,
+        icon: service_icon_2,
         title: "UI/UX design"
-        // Link: "/project"
     },
     {
         id: 3,
-        icon: service_icon_1,
+        icon: service_icon_3,
         title: "Website design"
     },
     {
         id: 4,
-        icon: service_icon_1,
+        icon: service_icon_4,
         title: "Webflow development"
     },
     {
         id: 5,
-        icon: service_icon_1,
+        icon: service_icon_5,
         title: "Brand identity"
     },
     {
         id: 6,
-        icon: service_icon_1,
+        icon: service_icon_6,
         title: "Interaction design"
     },
 ]
@@ -46,7 +50,7 @@ const serviceData = [
 const Specialties = () => {
     return (
         <div className='container pt-[120px] '>
-            <div className='grid md:grid-cols-2 lg:grid-cols-2 gap-[5px] md:gap-[134px] lg:gap-[134px] pl-[20px] lg:pl-[0px]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[5px] md:gap-[134px] lg:gap-[134px] pl-[20px] lg:pl-[0px]'>
                 <div className=''>
                     <span className='leading-[28px] text-[17px] lg:text-[20px] text-[#FF9330] font-bold font-syne'>Services</span>
                     <h1 className='leading-[72px] text-[40px] lg:text-[64px] font-bold font-syne pt-2 relative after:size-[40px] lg:after:size-[62px] after:rounded-full after:bg-[#FF9330] after:absolute after:top-[23px] lg:after:top-[15px] after:left-[2px] lg:after:left-[-2px] after:z-[-1]'><span className="absolute z-[100] "></span> <span>My</span> specialties</h1>
@@ -60,11 +64,11 @@ const Specialties = () => {
 
             <div className=" grid grid-cols-1 lg:grid-cols-[auto_1fr] pt-[48px] gap-6 ">
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
-                       {serviceData?.map( (item)=> {
-                        return  item.id === 1 ? <ServiceCard key={item.id} item={item} width="w-[140px]" /> : <ServiceCard key={item.id} item={item} />
-                       } )}
-                    </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 pl-[20px] ">
+                    {serviceData?.map((item) => {
+                        return item.id === 1 ? <ServiceCard key={item.id} item={item} width="w-[140px]" /> : <ServiceCard key={item.id} item={item} />
+                    })}
+                </div>
 
                 {/* <div className="grid grid-cols-3 gap-6">
                     <div className="bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px] flex flex-col justify-between hover:shadow-lg transition  group hover:cursor-pointer">
@@ -135,12 +139,12 @@ const Specialties = () => {
                 <div>
                     <div className="bg-black rounded-2xl text-white">
                         <div className="px-[24px] py-[36px]">
-                            <span className=" flex justify-end">
+                            <Link href={"/contacts"} className=" flex justify-end">
                                 <MdArrowOutward className='w-12 h-12 text-[#FFB646] ' />
-                            </span>
+                            </Link>
                             <div className="mt-[292px]">
                                 <p className="text-[#FFB646] text-[18px] leading-7 font-DM_Sans">SAY HELLO!</p>
-                                <h3 className="font-bold text-8 leading-10 font-syne pt-">hello@roudra.com</h3>
+                                <h3 className="font-bold text-8 leading-10 font-syne pt-">hello@ehsanul.com</h3>
                             </div>
                         </div>
                     </div>
@@ -180,11 +184,11 @@ const Specialties = () => {
                             <p className="leading-[28px] text-[18px] text-[#08080899]">Job done successfully</p>
                         </div>
                         <div className="pt-[36px]  w-[253px] h-[56px] mb-[120px]">
-                           <a href="/Ehsanul-Haque.pdf">
-                             <button className="bg-black text-white w-[256px] h-[56px] px-8 py-5 rounded-lg flex items-center justify-between font-DM_Sans cursor-pointer hover:text-[#FF9330] ">   Download my resume
-                                <span > <MdArrowOutward className='w-6 h-6 ' /> </span>
-                            </button>
-                           </a>
+                            <a href="/Ehsanul-Haque.pdf">
+                                <button className="bg-black text-white w-[256px] h-[56px] px-8 py-5 rounded-lg flex items-center justify-between font-DM_Sans cursor-pointer hover:text-[#FF9330] ">   Download my resume
+                                    <span > <MdArrowOutward className='w-6 h-6 ' /> </span>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>

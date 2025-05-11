@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
                     {/* right */}
                     <div className='flex gap-6'>
-                        <div className='bg-[#0808080A] rounded-xl px-[36px] py-[28px] flex flex-col justify-between w-[416px] h-[260px] border-1 border-[#FFFFFF33] group hover:cursor-pointer'>
+                        <Link href={"/contacts"}  className='bg-[#0808080A] rounded-xl px-[36px] py-[28px] flex flex-col justify-between w-[416px] h-[260px] border-1 border-[#FFFFFF33] group hover:cursor-pointer'>
                             <div className='flex justify-between'>
                                 <h3 className='font-syne font-bold text-[20px] leading-7 text-white w-[230px]'>Looking for a hectic designer?</h3>
                             </div>
@@ -41,9 +41,9 @@ const Footer = () => {
                                     hello@ehsanul.com</h4>
                                 <span> <MdArrowOutward className='w-6 h-6  text-white group-hover:text-[#FF9330]' /> </span>
                             </div>
-                        </div>
+                        </Link>
 
-                        <div className='bg-[#0808080A] rounded-xl px-[36px] py-[28px] flex flex-col justify-between w-[416px] h-[260px] border-1 border-[#FFFFFF33] group hover:cursor-pointer'>
+                        <Link href={"/contacts"}  className='bg-[#0808080A] rounded-xl px-[36px] py-[28px] flex flex-col justify-between w-[416px] h-[260px] border-1 border-[#FFFFFF33] group hover:cursor-pointer'>
                             <div className='flex justify-between'>
                                 <h3 className='font-syne font-bold text-[20px] leading-7 text-white'>Want a more in-depth look at my history?</h3>
                             </div>
@@ -52,7 +52,7 @@ const Footer = () => {
                                     +8801674087681</h4>
                                 <span> <MdArrowOutward className='w-6 h-6 text-[#08080899] text-white group-hover:text-[#FF9330]' /> </span>
                             </div>
-                        </div>
+                        </Link>
                     </div>
 
                 </div>
