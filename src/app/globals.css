@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-    --font-syne:  "Syne", "sans-serif"; 
-    --font-DM_Sans:  "DM Sans", "sans-serif";
-    --font-montserrat:  "Montserrat", "sans-serif";
+  --font-syne: "Syne", "sans-serif";
+  --font-DM_Sans: "DM Sans", "sans-serif";
+  --font-montserrat: "Montserrat", "sans-serif";
 
-    /* Screen Size */
-    --breakpoint-*: initial;
+  /* Screen Size */
+  --breakpoint-*: initial;
   --breakpoint-sm: 40rem;
   --breakpoint-md: 64rem;
   --breakpoint-lg: 81rem;
@@ -14,7 +14,7 @@
 
 
 .container {
-    margin:0 auto;
+  margin: 0 auto;
 }
 
 .custom_square {

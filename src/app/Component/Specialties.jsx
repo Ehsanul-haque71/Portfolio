@@ -3,24 +3,70 @@ import React from 'react'
 import android from '@/app/Assets/android.svg'
 import twelve from '@/app/Assets/twelve_plus.svg'
 import { MdArrowOutward } from "react-icons/md";
+import ServiceCard from "./ServiceCard";
+
+import service_icon_1 from '@/app/Assets/android.svg'
+import Link from "next/link";
+
+
+const serviceData = [
+    {
+        id: 1,
+        icon: service_icon_1,
+        title: "Mobile Apps Design"
+    },
+    {
+        id: 2,
+        icon: service_icon_1,
+        title: "UI/UX design"
+        // Link: "/project"
+    },
+    {
+        id: 3,
+        icon: service_icon_1,
+        title: "Website design"
+    },
+    {
+        id: 4,
+        icon: service_icon_1,
+        title: "Webflow development"
+    },
+    {
+        id: 5,
+        icon: service_icon_1,
+        title: "Brand identity"
+    },
+    {
+        id: 6,
+        icon: service_icon_1,
+        title: "Interaction design"
+    },
+]
 
 const Specialties = () => {
     return (
         <div className='container pt-[120px] '>
-            <div className='grid grid-cols-2'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-2 gap-[5px] md:gap-[134px] lg:gap-[134px] pl-[20px] lg:pl-[0px]'>
                 <div className=''>
-                    <span className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne'>Services</span>
-                    <h1 className='leading-[72px] text-[64px] font-bold font-syne pt-2 relative after:size-[62px] after:rounded-full after:bg-[#FF9330] after:absolute after:top-[15px] after:left-[-2px] after:z-[-1]'><span className="absolute z-[100] "></span> <span>My</span> specialties</h1>
+                    <span className='leading-[28px] text-[17px] lg:text-[20px] text-[#FF9330] font-bold font-syne'>Services</span>
+                    <h1 className='leading-[72px] text-[40px] lg:text-[64px] font-bold font-syne pt-2 relative after:size-[40px] lg:after:size-[62px] after:rounded-full after:bg-[#FF9330] after:absolute after:top-[23px] lg:after:top-[15px] after:left-[2px] lg:after:left-[-2px] after:z-[-1]'><span className="absolute z-[100] "></span> <span>My</span> specialties</h1>
                 </div>
-                <div className='text-[18px] leading-[28px] font-normal font-DM_Sans items-center w-[636px] pt-[30px] text-[#08080899]'>
+                <div className='text-[18px] leading-[28px] font-normal font-DM_Sans items-center pt-[0px] lg:pt-[30px] text-[#08080899]'>
                     Synergistically seize front-end methods of empowerment without extensive core competencies. Progressively repurpose alternative platforms
                 </div>
             </div>
 
 
 
-            <div className=" grid grid-cols-1 lg:grid-cols-[auto_1fr]  gap-6 ">
-                <div className="grid grid-cols-3 gap-6">
+            <div className=" grid grid-cols-1 lg:grid-cols-[auto_1fr] pt-[48px] gap-6 ">
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
+                       {serviceData?.map( (item)=> {
+                        return  item.id === 1 ? <ServiceCard key={item.id} item={item} width="w-[140px]" /> : <ServiceCard key={item.id} item={item} />
+                       } )}
+                    </div>
+
+                {/* <div className="grid grid-cols-3 gap-6">
                     <div className="bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px] flex flex-col justify-between hover:shadow-lg transition  group hover:cursor-pointer">
                         <div className="w-12 h-12 bg-white group-hover:bg-[#0808080A] rounded-full items-center justify-center flex ">
                             <Image src={android} alt="logo" />
@@ -82,7 +128,7 @@ const Specialties = () => {
                             <span><MdArrowOutward className=' w-6 h-6' /> </span>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
 
 
@@ -134,9 +180,11 @@ const Specialties = () => {
                             <p className="leading-[28px] text-[18px] text-[#08080899]">Job done successfully</p>
                         </div>
                         <div className="pt-[36px]  w-[253px] h-[56px] mb-[120px]">
-                            <button className="bg-black text-white w-[256px] h-[56px] px-8 py-5 rounded-lg flex items-center justify-between font-DM_Sans cursor-pointer hover:text-[#FF9330] ">   Download my resume
+                           <a href="/Ehsanul-Haque.pdf">
+                             <button className="bg-black text-white w-[256px] h-[56px] px-8 py-5 rounded-lg flex items-center justify-between font-DM_Sans cursor-pointer hover:text-[#FF9330] ">   Download my resume
                                 <span > <MdArrowOutward className='w-6 h-6 ' /> </span>
                             </button>
+                           </a>
                         </div>
                     </div>
                 </div>

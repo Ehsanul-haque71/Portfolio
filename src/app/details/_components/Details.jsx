@@ -32,7 +32,7 @@ const DetailsMe = () => {
                             </div>
 
                             <div className=' '>
-                                <div className='flex gap-[24px]'>
+                                <div className='grid grid-cols-3 mr-[34px]'>
                                     <div>
                                         <p className='text-[14px] leading-5'>client</p>
                                         <p className='font-bold font-DM_Sans text-[15px] leading-[16px] pt-[8px]'>Mashorom</p>
@@ -49,7 +49,7 @@ const DetailsMe = () => {
                                     </div>
 
                                 </div>
-                                <div className='pt-[24px] flex gap-[24px]'>
+                                <div className='pt-[24px] grid grid-cols-3 mr-[34px] '>
                                     <div>
                                         <p className='text-[14px] leading-5'>Start date</p>
                                         <p className='font-bold font-DM_Sans text-[15px] leading-[16px] pt-[8px]'>09/01/ 2020</p>
