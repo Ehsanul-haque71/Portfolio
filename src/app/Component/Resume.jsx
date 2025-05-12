@@ -6,7 +6,7 @@ import star from "@/app/Assets/Star.svg";
 import Link from 'next/link';
 import { MdArrowOutward } from "react-icons/md";
 import { VscVscode } from "react-icons/vsc";
-import webby from "@/app/Assets/webbyAward.svg"
+import webby from "@/app/Assets/webbyAward.svg";
 
 
 const Resume = () => {
@@ -36,6 +36,7 @@ const Resume = () => {
                             <button onClick={() => setComponent("Awards")} className="bg-white text-black w-[416px] h-[56px] px-8 py-5 rounded-lg flex items-center justify-between font-DM_Sans cursor-pointer hover:text-white hover:bg-black border ">Awards <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </button>
                         </div>
                     </div>
+
                     {/* right */}
                     {
                         Component === "AboutMe" && <AboutMe />

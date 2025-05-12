@@ -50,7 +50,7 @@ const serviceData = [
 const Specialties = () => {
     return (
         <div className='container pt-[120px] '>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[5px] md:gap-[134px] lg:gap-[134px] pl-[20px] lg:pl-[0px]'>
+            {/* <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[5px] md:gap-[134px] lg:gap-[134px] pl-[20px] lg:pl-[0px]'>
                 <div className=''>
                     <span className='leading-[28px] text-[17px] lg:text-[20px] text-[#FF9330] font-bold font-syne'>Services</span>
                     <h1 className='leading-[72px] text-[40px] lg:text-[64px] font-bold font-syne pt-2 relative after:size-[40px] lg:after:size-[62px] after:rounded-full after:bg-[#FF9330] after:absolute after:top-[23px] lg:after:top-[15px] after:left-[2px] lg:after:left-[-2px] after:z-[-1]'><span className="absolute z-[100] "></span> <span>My</span> specialties</h1>
@@ -58,13 +58,13 @@ const Specialties = () => {
                 <div className='text-[18px] leading-[28px] font-normal font-DM_Sans items-center pt-[0px] lg:pt-[30px] text-[#08080899]'>
                     Synergistically seize front-end methods of empowerment without extensive core competencies. Progressively repurpose alternative platforms
                 </div>
-            </div>
+            </div> */}
 
 
 
             <div className=" grid grid-cols-1 lg:grid-cols-[auto_1fr] pt-[48px] gap-6 ">
 
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 pl-[20px] ">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {serviceData?.map((item) => {
                         return item.id === 1 ? <ServiceCard key={item.id} item={item} width="w-[140px]" /> : <ServiceCard key={item.id} item={item} />
                     })}
@@ -136,7 +136,7 @@ const Specialties = () => {
 
 
 
-                <div>
+                {/* <div>
                     <div className="bg-black rounded-2xl text-white">
                         <div className="px-[24px] py-[36px]">
                             <Link href={"/contacts"} className=" flex justify-end">
@@ -148,7 +148,7 @@ const Specialties = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
 
@@ -156,11 +156,11 @@ const Specialties = () => {
 
             <div className="grid grid-cols-2 mt-[120px] gap-[134px]">
                 {/* left */}
-                <div>
+                {/* <div>
                     <Image src={twelve} alt="img" />
-                </div>
+                </div> */}
                 {/* right */}
-                <div>
+                {/* <div>
                     <div>
                         <p className="leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne pb-[10px]">Hello I’m</p>
                         <h3 className="leading-[72px] text-[64px] font-bold font-syne pt-2 relative after:absolute after:rounded-full after:size-[62px] after:bg-[#FF9330] after:top-[10px] after:right-[545px] after:z-[-3]">
@@ -191,7 +191,7 @@ const Specialties = () => {
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

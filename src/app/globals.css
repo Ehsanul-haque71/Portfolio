@@ -8,13 +8,15 @@
   /* Screen Size */
   --breakpoint-*: initial;
   --breakpoint-sm: 40rem;
-  --breakpoint-md: 64rem;
-  --breakpoint-lg: 81rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 83rem;
 }
 
 
 .container {
   margin: 0 auto;
+  padding:  0 16px;
 }
 
 .custom_square {

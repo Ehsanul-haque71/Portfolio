@@ -6,7 +6,7 @@ const ServiceCard = ({ item, width = "w-[80px]" }) => {
     return (
 
 
-        <Link href={"/project"} className='bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px]  justify-between hover:shadow-lg transition w-[270px] group hover:cursor-pointer container'>
+        <Link href={"/project"} className='bg-[#0808080A] hover:bg-[#FFFFFF] rounded-xl px-[24px] py-[28px]  justify-between hover:shadow-lg transition group hover:cursor-pointer inline-block'>
             <div className="w-12 h-12 bg-white group-hover:bg-[#0808080A] rounded-full items-center justify-center flex">
                 <Image src={item.icon} alt='mobile_logo' />
             </div>

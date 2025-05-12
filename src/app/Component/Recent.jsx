@@ -21,7 +21,7 @@ const Recent = ({button=true, className, sectionTitle}) => {
                             <Link href={"/project"} className="bg-transparent text-[#080808] w-[56px] h-[28px] px-[16px] py-[6px] rounded-full flex items-center justify-center font-DM_Sans cursor-pointer hover:text-white hover:bg-black border border-[#080808] ">APP </Link>
                             <Link href={"/project"} className=' bg-transparent text-[#080808] w-[56px] h-[28px] px-[122px] py-[6px] rounded-full flex items-center justify-center font-DM_Sans cursor-pointer hover:text-white hover:bg-black border border-[#080808]'>DEVELOPMENT</Link>
                         </div>
-                        <Link href={"/details"} className='flex justify-between items-center pt-[12px]'>
+                        <Link href={"/details"} className='flex justify-between items-center pt-[12px] hover:text-[#FF9330]'>
                             <h4 className='text-[32px] font-semibold flex items-center gap-6 font-syne'>Basinik Finance App</h4>
                             <span > <MdArrowOutward className='w-6 h-6 ' /> </span>
                         </Link>
@@ -32,7 +32,7 @@ const Recent = ({button=true, className, sectionTitle}) => {
                             <Link href={"/project"} className="bg-transparent text-[#080808] w-[56px] h-[28px] px-[16px] py-[6px] rounded-full flex items-center justify-center font-DM_Sans cursor-pointer hover:text-white hover:bg-black border border-[#080808] ">APP </Link>
                             <Link href={"/project"} className=' bg-transparent text-[#080808] w-[56px] h-[28px] px-[122px] py-[6px] rounded-full flex items-center justify-center font-DM_Sans cursor-pointer hover:text-white hover:bg-black border border-[#080808]'>DEVELOPMENT</Link>
                         </div>
-                        <Link href={"/details"} className='flex justify-between items-center pt-[12px]'>
+                        <Link href={"/details"} className='flex justify-between items-center pt-[12px] hover:text-[#FF9330]'>
                             <h4 className='text-[32px] font-semibold flex items-center gap-6 font-syne'>Oxilex Dashboard design</h4>
                             <span > <MdArrowOutward className='w-6 h-6 ' /> </span>
                         </Link>

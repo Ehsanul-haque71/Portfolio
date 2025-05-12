@@ -8,6 +8,7 @@ import workFour from "@/app/Assets/work4.png";
 import workFive from '@/app/Assets/work5.png';
 import Por_right from "@/app/Assets/Por_right.jpg";
 import { MdArrowOutward } from "react-icons/md";
+import Link from 'next/link';
 
 const Project = () => {
   return (
@@ -18,21 +19,26 @@ const Project = () => {
             <p className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne '>Portfolio</p>
             <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-2 pb-10 relative  after:absolute after:rounded-full after:size-[62px] after:top-[13px] after:right-[116px] z-[1] after:bg-[#FF9330] after:z-[-1]'> <span>My recent work</span></h2>
           </div>
-          <div className=' grid grid-cols-[auto_1fr] gap-[24px] pb-[28px]'>
+          {/* 1st layer */}
+          <div className=' grid grid-cols-[auto_1fr] gap-[24px]  pb-[28px]'>
             <div className='relative z-[-2]'>
               <Image src={workOne} alt='project1' />
-              <div className='flex items-center absolute top-[300px] left-[150px]  z-[2] '>
-                <p>Oxilex Dashboard design</p>
-                <span><MdArrowOutward /></span>
-              </div>
+              <Link href={"/project"} className='flex  absolute bottom-[10px] left-[25px]  z-[2] cursor-pointer'>
+                <p className='font-syne font-bold text-[32px] leading-10 text-white '>Oxilex Dashboard design</p>
+                <span><MdArrowOutward className='w-[40px] h-[40px] text-white' /></span>
+              </Link>
             </div>
             <Image className='rounded-2xl h-[380px]' src={cheffest} alt='project2' />
           </div>
+
+          {/* 2nd layer */}
           <div className='grid grid-cols-3 gap-[24px] pb-[28px]'>
             <Image src={workTwo} alt='projectImg' />
             <Image src={workThree} alt='projectImg' />
             <Image src={workFour} alt='projectImgprojectImg' />
           </div>
+
+          {/* 3rd layer */}
           <div className='grid grid-cols-[auto_1fr] gap-[24px]'>
             <Image className='rounded-2xl max-w-[746px] h-[380px]' src={Por_right} alt='projectImg' />
             <Image src={workFive} alt='projectImg' />

@@ -1,8 +1,9 @@
 import Blog1 from '@/app/Assets/Blog1.png'
 import Image from 'next/image'
-import { MdArrowOutward } from 'react-icons/md'
+import { MdArrowOutward } from 'react-icons/md';
+import Link from 'next/link';
 
-const BlogCard = ({image=Blog1, className, category, publishDate}) => {
+const BlogCard = ({ image = Blog1, className, category, publishDate }) => {
     return (
         <div className={className}>
             <div>
@@ -19,12 +20,12 @@ const BlogCard = ({image=Blog1, className, category, publishDate}) => {
                 </div>
             </div>
 
-            <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
+            <Link href={"/blogdetails"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
                 <div >
                     <h3 className='font-syne text-2xl leading-8 font-bold  '>Right-lo-left behind development in mobile web design</h3>
                 </div>
                 <span ><MdArrowOutward className='w-6 h-6' /></span>
-            </div>
+            </Link>
         </div>
     )
 }

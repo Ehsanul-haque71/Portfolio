@@ -43,7 +43,7 @@ useEffect(()=> {
 
 
     return (
-        <div ref={slideBar} className='pl-8 h-screen bg-black w-[458px] fixed top-0 right-0 z-[1001] '>
+        <div ref={slideBar} className='pl-8 h-screen bg-black w-[95vw] max-w-[458px] md:w-[458px] fixed top-0 right-0 z-[1001] '>
             <div className='mb-[80px]'>
                 <div className='flex justify-between gap-2 items-center border-b border-b-white/50'>
                     <span className='flex items-center justify-center font-syne font-bold text-[24px] gap-2'>

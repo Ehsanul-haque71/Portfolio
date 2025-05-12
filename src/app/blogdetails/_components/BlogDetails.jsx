@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 import client from "@/app/Assets/client.svg";
 import Bdetails from "@/app/Assets/blog.png";
 import leftImg from "@/app/Assets/Bdetails_left.png"
@@ -11,10 +12,11 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaLink } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
-import Blog1 from '@/app/Assets/Blog1.png'
-import Blog2 from '@/app/Assets/Blog2.png'
-import Blog3 from '@/app/Assets/Blog3.png'
-import Blog4 from '@/app/Assets/Blog4.png'
+import Blog1 from '@/app/Assets/Blog1.png';
+import Blog2 from '@/app/Assets/Blog2.png';
+import Blog3 from '@/app/Assets/Blog3.png';
+import Blog4 from '@/app/Assets/Blog4.png';
+import DetailsMe from '@/app/details/_components/Details';
 
 const BlogDetails = () => {
     return (
@@ -89,7 +91,7 @@ const BlogDetails = () => {
                                 <h2 className=' font-bold font-syne text-[24px] leading-[32px]'>1. Learning the basics</h2>
                                 <p className='pt-[24px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>Everyone in my team works towards the samegoal. This enabled our teams to ship new ideas and feel more capable. Podcasting operational — change management inside of workflows. Completely synergize.</p>
                                 <p className='pt-[40px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>
-                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure 
                                 </p>
                             </div>
 
@@ -97,7 +99,7 @@ const BlogDetails = () => {
                                 <h2 className=' font-bold font-syne text-[24px] leading-[32px]'>2. Learning the basics</h2>
                                 <p className='pt-[24px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>Everyone in my team works towards the samegoal. This enabled our teams to ship new ideas and feel more capable. Podcasting operational — change management inside of workflows. Completely synergize.</p>
                                 <p className='pt-[40px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>
-                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself 
                                 </p>
                             </div>
 
@@ -115,12 +117,14 @@ const BlogDetails = () => {
                                             <span className='hover:text-[#FF9330]'><FaRegHeart /></span>
                                         </div>
                                     </div>
+
                                     <div className='flex gap-2 '>
-                                        <button className="bg-transparent text-[#080808] w-[56px] h-[28px] px-[16px] py-[6px] rounded-full flex items-center justify-center font-DM_Sans cursor-pointer hover:text-white hover:bg-black border border-[#080808] ">APP </button>
-                                        <button className=' bg-transparent text-[#080808] w-[56px] h-[28px] px-[122px] py-[6px] rounded-full flex items-center justify-center font-DM_Sans cursor-pointer hover:text-white hover:bg-black border border-[#080808]'>DEVELOPMENT</button>
+                                        <Link href={"/project"} className="bg-transparent text-[#080808] w-[56px] h-[28px] px-[16px] py-[6px] rounded-full flex items-center justify-center font-DM_Sans cursor-pointer hover:text-white hover:bg-black border border-[#080808] ">App</Link>
+
+                                        <Link href={"/project"} className=' bg-transparent text-[#080808] w-[56px] h-[28px] px-[122px] py-[6px] rounded-full flex items-center justify-center font-DM_Sans cursor-pointer hover:text-white hover:bg-black border border-[#080808]'>DEVELOPMENT</Link>
                                     </div>
                                 </div>
-                                <div></div>
+                                
                             </div>
                         </div>
                     </div>
@@ -151,12 +155,12 @@ const BlogDetails = () => {
                                 </div>
                             </div>
 
-                            <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
-                                <div>
+                            <Link href={"/project"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
+                                <div >
                                     <h3 className='font-syne text-2xl leading-8 font-bold  '>Right-lo-left behind development in mobile web design</h3>
                                 </div>
                                 <span ><MdArrowOutward className='w-6 h-6' /></span>
-                            </div>
+                            </Link>
                         </div>
 
                         {/* blog_2 */}
@@ -175,12 +179,12 @@ const BlogDetails = () => {
                                 </div>
                             </div>
 
-                            <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330]'>
+                            <Link href={"/blogdetails"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330]'>
                                 <div>
                                     <h3 className='font-syne text-2xl leading-8 font-bold  '>Connect craft: Reading the smart experience</h3>
                                 </div>
                                 <span ><MdArrowOutward className='w-6 h-6' /></span>
-                            </div>
+                            </Link>
                         </div>
 
 
@@ -200,12 +204,12 @@ const BlogDetails = () => {
                                 </div>
                             </div>
 
-                            <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
+                            <Link href={"/blogdetails"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
                                 <div>
                                     <h3 className='font-syne text-2xl leading-8 font-bold  '>Ecoglow: Sustainable skincare a brighter tomorrow</h3>
                                 </div>
                                 <span ><MdArrowOutward className='w-6 h-6' /></span>
-                            </div>
+                            </Link>
                         </div>
 
 
@@ -225,12 +229,12 @@ const BlogDetails = () => {
                                 </div>
                             </div>
 
-                            <div className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
+                            <Link href={"/blogdetails"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
                                 <div>
                                     <h3 className='font-syne text-2xl leading-8 font-bold  '>Right-lo-left behind development in mobile web design</h3>
                                 </div>
                                 <span ><MdArrowOutward className='w-6 h-6' /></span>
-                            </div>
+                            </Link>
                         </div>
 
                     </div>
