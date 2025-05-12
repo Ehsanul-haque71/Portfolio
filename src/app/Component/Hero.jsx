@@ -28,12 +28,13 @@ const Hero = () => {
                 {/* left */}
 
                 <div className=' pt-[60px] left pl-[20px] lg:pl-[0px]'>
-                    <h3 className=' text-[32px] font-semibold flex items-center gap-6'> <hr className='w-[65px] text-[#080808]' /> Hello, I’m✌</h3>
-                    <h1 className='relative font-syne leading-[110px] font-bold text-[65px] lg:text-[140px]  pt-2  after:content-[""] after:size-[120px] after:rounded-full after:bg-yellow-400 after:absolute after:top-[6px] after:-left-[10px] after:z-[-1] sm:w-[498px]'> <span className='bg-amber-300 w-[70px] h-[70px]'></span> <span>Ehsanul</span> Haque</h1>
-                    {/* <p className='pt-6 text-2xl font-semibold font-syne'>Product Designer | Based in Bangladesh</p> */}
-                    <div className='flex gap-[17px] pt-[30px] '>
-                        <Link href={"/contacts"} className='flex gap-2 font-bold bg-black py-4 px-8 rounded-lg  text-white cursor-pointer hover:bg-transparent hover:text-black  border ' >Let’s Talk <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </Link>
-                        <Link href={"/project"} className='flex gap-2 font-bold bg-black py-4 px-8 rounded-lg  text-white cursor-pointer hover:bg-transparent hover:text-black border '>My Work <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </Link>
+                    <h3 className=' text-[25px] lg:text-[32px] font-semibold flex items-center gap-3 md:gap-6'> <hr className='w-[55px] md:w-[60px] lg:w-[65px] text-[#080808]' /> Hello, I’m✌</h3>
+                    <h1 className='relative font-syne leading-[90px] lg:leading-[110px] font-bold text-[60px] md:text-[70px] lg:text-[119px]  pt-2 after:size-[50px] after:top-[28px] after:-left-[2px]  md:after:size-[57px]  lg:after:size-[100px] after:rounded-full after:bg-yellow-400 after:absolute md:after:top-[25px] lg:after:top-[15px]  md:after:-left-[0px] lg:after:-left-[5px] after:z-[-1] sm:w-[498px]'> <span className='bg-amber-300 w-[70px] h-[70px]'></span> <span>Ehsanul</span> Haque</h1>
+                    <p className='pt-6 md:text-[20px] lg:text-[24px] font-semibold font-syne'>Product Designer | Based in Bangladesh</p>
+                    <div className='flex gap-[13px] sm:gap-[17px] pt-[30px] '>
+                        <Link href={"/contacts"} className='flex gap-2 font-bold bg-black py-5 px-5 sm:py-5 sm:px-8 rounded-lg  text-white cursor-pointer hover:bg-transparent hover:text-black  border ' >Let’s Talk <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </Link>
+
+                        <Link href={"/project"} className='flex gap-2 font-bold bg-black py-5 px-5 sm:py-5 sm:px-8 rounded-lg  text-white cursor-pointer hover:bg-transparent hover:text-black border '>My Work <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </Link>
                     </div>
                     <div className='flex flex-wrap gap-6 pt-[120px] items-center'>
                         <div className=' flex'>
@@ -64,7 +65,7 @@ const Hero = () => {
 
 
                 {/* right */}
-                <div className='hidden md:block md:w-[600px] absolute top-0 right-0 z-10'>
+                <div className='hidden md:block md:w-[435px] lg:w-[500px] absolute top-0 right-0 z-10'>
                     <Image className='w-full' src={Man} alt='Hero_item' />
                 </div>
             </div>

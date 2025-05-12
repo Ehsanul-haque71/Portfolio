@@ -49,16 +49,16 @@ const serviceData = [
 
 const Specialties = () => {
     return (
-        <div className='container pt-[120px] '>
-            {/* <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[5px] md:gap-[134px] lg:gap-[134px] pl-[20px] lg:pl-[0px]'>
-                <div className=''>
+        <div className='container '>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[3px]  md:gap-[134px]  pl-[20px] lg:pl-[0px] pt-[100px] md:pt-[120px]'>
+                <div className=' '>
                     <span className='leading-[28px] text-[17px] lg:text-[20px] text-[#FF9330] font-bold font-syne'>Services</span>
-                    <h1 className='leading-[72px] text-[40px] lg:text-[64px] font-bold font-syne pt-2 relative after:size-[40px] lg:after:size-[62px] after:rounded-full after:bg-[#FF9330] after:absolute after:top-[23px] lg:after:top-[15px] after:left-[2px] lg:after:left-[-2px] after:z-[-1]'><span className="absolute z-[100] "></span> <span>My</span> specialties</h1>
+                    <h1 className='leading-[72px] text-[37px] lg:text-[63px] font-bold font-syne pt-2 relative after:size-[40px] lg:after:size-[62px] after:rounded-full after:bg-[#FF9330] after:absolute after:top-[23px] lg:after:top-[15px] after:left-[2px] lg:after:left-[-2px] after:z-[-1]'><span className="absolute z-[100] "></span> <span>My</span> specialties</h1>
                 </div>
-                <div className='text-[18px] leading-[28px] font-normal font-DM_Sans items-center pt-[0px] lg:pt-[30px] text-[#08080899]'>
+                <div className='text-[11px] lg:text-[18px] leading-[28px] font-semibold lg:font-normal font-DM_Sans items-center pt-[0px]  lg:pt-[30px] text-[#08080899]'>
                     Synergistically seize front-end methods of empowerment without extensive core competencies. Progressively repurpose alternative platforms
                 </div>
-            </div> */}
+            </div>
 
 
 
@@ -136,19 +136,20 @@ const Specialties = () => {
 
 
 
-                {/* <div>
-                    <div className="bg-black rounded-2xl text-white">
+                <div className=" sm:mx-[115px] md:mx-[130px] lg:mx-[0px]">
+                    <div className="bg-black rounded-2xl text-white ">
                         <div className="px-[24px] py-[36px]">
                             <Link href={"/contacts"} className=" flex justify-end">
                                 <MdArrowOutward className='w-12 h-12 text-[#FFB646] ' />
                             </Link>
-                            <div className="mt-[292px]">
+                            <div className="mt-[15px]  lg:mt-[292px]">
                                 <p className="text-[#FFB646] text-[18px] leading-7 font-DM_Sans">SAY HELLO!</p>
                                 <h3 className="font-bold text-8 leading-10 font-syne pt-">hello@ehsanul.com</h3>
                             </div>
                         </div>
                     </div>
-                </div> */}
+                </div>
+
             </div>
 
 
