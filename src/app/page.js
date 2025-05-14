@@ -16,7 +16,7 @@ export default function Home() {
       <Hero />
       <Specialties />
       <Resume />
-      {/* <Recent className={"bg-[#FFE9D9]"} sectionTitle={"My recent work"} /> */}
+      <Recent className={"bg-[#FFE9D9]"} sectionTitle={"My recent work"} />
       {/* <Testimonial /> */}
       {/* <Ads/> */}
       {/* <Blog/> */}
