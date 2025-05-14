@@ -4,7 +4,7 @@ import Link from "next/link";
 import twelve from '@/app/Assets/twelve_plus.svg'
 import { MdArrowOutward } from "react-icons/md";
 import ServiceCard from "./ServiceCard";
-
+import sticker from "@/app/Assets/resume_sticker.svg"
 import service_icon_1 from '@/app/Assets/android.svg'
 import service_icon_2 from '@/app/Assets/Ui_Ux.svg'
 import service_icon_3 from '@/app/Assets/cart.svg'
@@ -53,9 +53,9 @@ const Specialties = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[3px]  md:gap-[134px]  pl-[20px] lg:pl-[0px] pt-[100px] md:pt-[120px]'>
                 <div className=' '>
                     <span className='leading-[28px] text-[17px] lg:text-[20px] text-[#FF9330] font-bold font-syne'>Services</span>
-                    <h1 className='leading-[72px] text-[37px] lg:text-[63px] font-bold font-syne pt-2 relative after:size-[40px] lg:after:size-[62px] after:rounded-full after:bg-[#FF9330] after:absolute after:top-[23px] lg:after:top-[15px] after:left-[2px] lg:after:left-[-2px] after:z-[-1]'><span className="absolute z-[100] "></span> <span>My</span> specialties</h1>
+                    <h1 className='leading-[72px] text-[37px] lg:text-[54px] font-bold font-syne pt-2 relative after:size-[40px] lg:after:size-[62px] after:rounded-full after:bg-[#FF9330] after:absolute after:top-[23px] lg:after:top-[15px] after:left-[0px] lg:after:left-[-1px] after:z-[-1]'><span className="absolute z-[100] "></span> <span>My</span> specialties</h1>
                 </div>
-                <div className='text-[11px] lg:text-[18px] leading-[28px] font-semibold lg:font-normal font-DM_Sans items-center pt-[0px]  lg:pt-[30px] text-[#08080899]'>
+                <div className='text-[11px] md:text-[15px] lg:text-[12px] leading-[28px] font-semibold lg:font-normal font-DM_Sans items-center pt-[0px]  lg:pt-[30px] text-[#08080899]'>
                     Synergistically seize front-end methods of empowerment without extensive core competencies. Progressively repurpose alternative platforms
                 </div>
             </div>
@@ -155,44 +155,47 @@ const Specialties = () => {
 
 
 
-            <div className="grid grid-cols-2 mt-[120px] gap-[134px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 mt-[50px] lg:mt-[120px] gap-[95px] lg:gap-[134px]">
                 {/* left */}
-                {/* <div>
-                    <Image src={twelve} alt="img" />
-                </div> */}
+                <div>
+                    <Image src={sticker} alt="img" />
+                </div>
+
+
                 {/* right */}
-                {/* <div>
+                <div>
                     <div>
                         <p className="leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne pb-[10px]">Hello I’m</p>
-                        <h3 className="leading-[72px] text-[64px] font-bold font-syne pt-2 relative after:absolute after:rounded-full after:size-[62px] after:bg-[#FF9330] after:top-[10px] after:right-[545px] after:z-[-3]">
+                        <h3 className="leading-[1.1] text-[36px] lg:text-[64px] font-bold font-syne pt-2 relative after:absolute after:rounded-full after:size-[30px] lg:after:size-[55px] after:bg-[#FF9330] after:top-[13px] lg:after:top-[15px] after:left-[0px] md:after:left-[-0px] lg:after:right-[378px] after:z-[-3]">
                             Ehsanul Haque, Product Designer
                         </h3>
-                        <h4 className="leading-[54px] text-[44px] font-bold font-syne pt-3">Based in Bangladesh
+                        <h4 className="leading-[1.2] text-[23px]  lg:text-[37px] font-bold font-syne pt-3">Based in Bangladesh
                         </h4>
-                        <p className="text-[18px] leading-[28px] font-normal font-DM_Sans text-[#08080899] w-[526px] pt-4">That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not only reflects who you are and what you stand for, but words that truly land with those that read them, calling your audience in and making them .</p>
+                        <p className="text-[18px] leading-[1.5] font-normal font-DM_Sans text-[#08080899] max-w-[526px] pt-4">That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not only reflects who you are and what you stand for, but words that truly land with those that read them, calling your audience in and making them .</p>
                     </div>
-                    <div className="grid grid-cols-3 pt-6">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-[15px] lg:gap-[41px] pt-6">
                         <div>
-                            <h5 className="leading-[40px] text-[32px] font-bold font-syne">08</h5>
-                            <p className="leading-[28px] text-[18px] text-[#08080899]">Award winner</p>
-                        </div>
-                        <div>
-                            <h6 className="leading-[40px] text-[32px] font-bold font-syne">1.2k</h6>
-                            <p className="leading-[28px] text-[18px] text-[#08080899]">Worldwide client</p>
+                            <h5 className="leading-[1.2] text-[32px] font-bold font-syne">08</h5>
+                            <p className="leading-[1.5] text-[15px] text-[#08080899]">Award winner</p>
                         </div>
                         <div>
-                            <h3 className="leading-[40px] text-[32px] font-bold font-syne">3.5k</h3>
-                            <p className="leading-[28px] text-[18px] text-[#08080899]">Job done successfully</p>
+                            <h6 className="leading-[1.2] text-[32px] font-bold font-syne">1.2k</h6>
+                            <p className="leading-[1.5] text-[15px] text-[#08080899]">Worldwide client</p>
                         </div>
-                        <div className="pt-[36px]  w-[253px] h-[56px] mb-[120px]">
-                            <a href="/Ehsanul-Haque.pdf">
-                                <button className="bg-black text-white w-[256px] h-[56px] px-8 py-5 rounded-lg flex items-center justify-between font-DM_Sans cursor-pointer hover:text-[#FF9330] ">   Download my resume
-                                    <span > <MdArrowOutward className='w-6 h-6 ' /> </span>
-                                </button>
-                            </a>
+                        <div>
+                            <h3 className="leading-[1.2] text-[32px] font-bold font-syne">3.5k</h3>
+                            <p className="leading-[1.5] text-[15px]  text-[#08080899]">Job done successfully</p>
                         </div>
+
                     </div>
-                </div> */}
+                    <div className="pt-[36px]  w-[253px] h-[56px] mb-[120px]">
+                        <a href="/Ehsanul-Haque.pdf">
+                            <button className="bg-black text-white w-[256px] h-[56px] px-8 py-5 rounded-lg flex items-center justify-between font-DM_Sans cursor-pointer hover:text-[#FF9330] ">   Download my resume
+                                <span > <MdArrowOutward className='w-6 h-6 ' /> </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     )

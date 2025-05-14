@@ -29,14 +29,14 @@ const Hero = () => {
 
                 <div className=' pt-[60px] left pl-[20px] lg:pl-[0px]'>
                     <h3 className=' text-[25px] lg:text-[32px] font-semibold flex items-center gap-3 md:gap-6'> <hr className='w-[55px] md:w-[60px] lg:w-[65px] text-[#080808]' /> Hello, I’m✌</h3>
-                    <h1 className='relative font-syne leading-[90px] lg:leading-[110px] font-bold text-[60px] md:text-[70px] lg:text-[119px]  pt-2 after:size-[50px] after:top-[28px] after:-left-[2px]  md:after:size-[57px]  lg:after:size-[100px] after:rounded-full after:bg-yellow-400 after:absolute md:after:top-[25px] lg:after:top-[15px]  md:after:-left-[0px] lg:after:-left-[5px] after:z-[-1] sm:w-[498px]'> <span className='bg-amber-300 w-[70px] h-[70px]'></span> <span>Ehsanul</span> Haque</h1>
+                    <h1 className='relative font-syne leading-[1.2] font-bold text-[60px] md:text-[70px] lg:text-[113px]  pt-2 after:size-[50px] after:top-[18px] after:-left-[2px]  md:after:size-[57px]  lg:after:size-[95px] after:rounded-full after:bg-yellow-400 after:absolute md:after:top-[20px] lg:after:top-[25px]  md:after:-left-[0px] lg:after:-left-[5px] after:z-[-1] max-w-[498px]'> <span className='bg-amber-300 w-[70px] h-[70px]'></span> <span>Ehsanul</span> Haque</h1>
                     <p className='pt-6 md:text-[20px] lg:text-[24px] font-semibold font-syne'>Product Designer | Based in Bangladesh</p>
                     <div className='flex gap-[13px] sm:gap-[17px] pt-[30px] '>
                         <Link href={"/contacts"} className='flex gap-2 font-bold bg-black py-5 px-5 sm:py-5 sm:px-8 rounded-lg  text-white cursor-pointer hover:bg-transparent hover:text-black  border ' >Let’s Talk <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </Link>
 
                         <Link href={"/project"} className='flex gap-2 font-bold bg-black py-5 px-5 sm:py-5 sm:px-8 rounded-lg  text-white cursor-pointer hover:bg-transparent hover:text-black border '>My Work <span > <MdArrowOutward className='w-6 h-6 ' /> </span> </Link>
                     </div>
-                    <div className='flex flex-wrap gap-6 pt-[120px] items-center'>
+                    <div className='flex flex-wrap gap-6 pt-[80px] lg:pt-[120px] items-center'>
                         <div className=' flex'>
                             <span className='text-[44px] font-bold leading-[54px]  font-syne '>1.2k+</span>
                             <h5 className='text-[18px] pt-[13px] leading-[28px] pl-[12px] font-DM_Sans '>Worldwide client</h5>
