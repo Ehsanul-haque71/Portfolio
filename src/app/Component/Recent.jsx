@@ -12,7 +12,7 @@ const Recent = ({ button = true, className, sectionTitle }) => {
             <div className='container '>
                 <div className='py-[65px] lg:py-[100px] '>
                     <div className='flex flex-col items-center justify-center '>
-                        <p className='leading-[28px] text-[17px] lg:text-[20px] text-[#FF9330] font-bold font-syne '>Portfolio</p>
+                        <p className='leading-[1.6] text-[17px] lg:text-[20px] text-[#FF9330] font-bold font-syne '>Portfolio</p>
                         <h2 className='leading-[1.1] text-[35px] lg:text-[64px] font-bold font-syne pt-2 pb-10 relative  after:absolute after:rounded-full after:size-[33px] lg:after:size-[62px] after:top-[13px] after:right-[65px] lg:after:right-[116px] z-[1] after:bg-[#FF9330] after:z-[-1]'> <span>{sectionTitle}</span></h2>
                     </div>
                     <div className='grid grid-cols-1 md:grid-cols-2 md:gap-6'>

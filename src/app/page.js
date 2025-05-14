@@ -17,8 +17,8 @@ export default function Home() {
       <Specialties />
       <Resume />
       <Recent className={"bg-[#FFE9D9]"} sectionTitle={"My recent work"} />
-      {/* <Testimonial /> */}
-      {/* <Ads/> */}
+      <Testimonial />
+      <Ads/>
       {/* <Blog/> */}
       {/* <Pricing/> */}
     </div>

@@ -17,40 +17,67 @@ const Ads = () => {
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 5,
+        slidesToShow: 5, // Default: 1024px+
         slidesToScroll: 2,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
-        cssEase: "linear"
+        speed: 3000,
+        autoplaySpeed: 500,
+        cssEase: "linear",
+        responsive: [
+            {
+                breakpoint: 1024, // <1024px
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 768, // <768px
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 640, // <640px
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     };
 
     return (
-        <section className='container'>
-            <div >
+        <section>
+            {/* <div >
                 <hr className='w-[1296px]' />
-            </div>
+            </div> */}
 
-            <Slider className='my-[24px]' {...settings}>
-                <div>
-                    <Image src={Mat} alt="Mat" />
+            <div className='container'>
+                <div className='border-y border-y-[#0808081A] max-[1296px]  mx-auto'>
+                    <Slider className='my-[24px] ' {...settings}>
+                        <div>
+                            <Image src={Mat} alt="Mat" />
+                        </div>
+                        <div>
+                            <Image src={Google} alt="Google" />
+                        </div>
+                        <div>
+                            <Image src={Factual} alt="Factual" />
+                        </div>
+                        <div>
+                            <Image src={Airbnb} alt="Airbnb" />
+                        </div>
+                        <div>
+                            <Image src={Case} alt="Case" />
+                        </div>
+                        <div>
+                            <Image src={Logitech} alt="Logitech" />
+                        </div>
+                    </Slider>
                 </div>
-                <div>
-                    <Image src={Google} alt="Google" />
-                </div>
-                <div>
-                    <Image src={Factual} alt="Factual" />
-                </div>
-                <div>
-                    <Image src={Airbnb} alt="Airbnb" />
-                </div>
-                <div>
-                    <Image src={Case} alt="Case" />
-                </div>
-                <div>
-                    <Image src={Logitech} alt="Logitech" />
-                </div>
-            </Slider>
+            </div>
 
             {/* <div className='my-[24px] flex gap-6 w-[1296px] items-center justify-between'>
                 <Image  src={Mat} alt='ads' />
@@ -61,10 +88,10 @@ const Ads = () => {
                 <Image  src={Logitech} alt='ads' />
                 
                 </div> */}
-            <div>
+            {/* <div>
 
                 <hr className='w-[1296px]' />
-            </div>
+            </div> */}
         </section>
     )
 }

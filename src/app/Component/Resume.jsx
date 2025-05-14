@@ -396,13 +396,8 @@ const Awards = () => {
                     </div>
 
                     <div className='grid grid-cols-2 items-center justify-between gap-4'>
-                        
-
                     </div>
-
                 </div>
-
-
             </div>
         </div>
     )
