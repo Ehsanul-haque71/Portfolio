@@ -19,7 +19,7 @@ export default function Home() {
       <Recent className={"bg-[#FFE9D9]"} sectionTitle={"My recent work"} />
       <Testimonial />
       <Ads/>
-      {/* <Blog/> */}
+      <Blog/>
       {/* <Pricing/> */}
     </div>
   );
