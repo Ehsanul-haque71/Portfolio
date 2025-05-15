@@ -17,7 +17,7 @@ const Blog = () => {
                 </div>
                 <div className='grid items-center justify-center sm:grid-cols-2 lg:grid-cols-4 gap-6 pb-[36px]'>
                     {/* blog_1 */}
-                    <div className='sm:pt-[48px]'>
+                    <div className='pt-[50px] sm:pt-[48px]'>
                         <div className='max-w-[306px]'>
                             <Image src={Blog1} alt='logo' />
                             <div className='flex gap-3 pt-6 pb-3'>
