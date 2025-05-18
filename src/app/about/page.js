@@ -10,9 +10,9 @@ const About = () => {
     <div>
       <AboutMe/>
       <Vision/>
-      <ResumeAll/>
+      {/* <ResumeAll/>
       <TestimonialMe />
-      <AdsMe/>
+      <AdsMe/> */}
     </div>
   )
 }
