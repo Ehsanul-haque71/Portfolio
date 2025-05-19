@@ -181,9 +181,9 @@ const Education = () => {
     return (
         <div>
             <p className='font-bold font-syne text-[32px] leading-8 pb-[24px]'>Education</p>
-            <div className='gap-[25px] flex flex-col'>
+            <div className='gap-[25px] grid grid-cols-1 sm:grid-cols-2'>
                 <div className='bg-[#0808080A] rounded-2xl hover:bg-white px-[24px] pb-[24px] pt-[30px] md:max-w-[600px] lg:max-w-[746px]'>
-                    <div className=' flex-col lg:flex gap-[35px] lg:gap-[104px]'>
+                    <div className=' flex-col flex gap-[35px] lg:gap-[104px]'>
                         <div className='text-[14px] leading-[1.4] '>
                             <p>01/2020 – 07/2025</p>
                         </div>

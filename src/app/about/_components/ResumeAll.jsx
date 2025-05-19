@@ -115,7 +115,8 @@ const EXperiences = () => {
     return (
         <div className=''>
             <p className='font-bold font-syne text-[32px] leading-8 pb-[24px]'>Experience</p>
-            <div className='grid grid-cols-2 items-center justify-between gap-4'>
+
+            <div className='grid grid-cols-1 sm:grid-cols-2 items-center justify-between gap-4'>
                 <div className='bg-[#0808080A] rounded-2xl hover:bg-white px-[24px] pb-[24px] pt-[30px] '>
                     <div>
                         <p className='text-[14px] leading-5 text-[#080808]'>03/216 – Running</p>
@@ -142,7 +143,7 @@ const EXperiences = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-2 items-center justify-between gap-4 pt-[20px]'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 items-center justify-between gap-4 pt-[20px]'>
                 <div className='bg-[#0808080A] rounded-2xl hover:bg-white px-[24px] pb-[24px] pt-[30px] '>
                     <div>
                         <p className='text-[14px] leading-5 text-[#080808]'>03/216 – Running</p>
@@ -168,6 +169,7 @@ const EXperiences = () => {
                     </div>
                 </div>
             </div>
+
         </div>
         // <Exp/>
     )
@@ -177,16 +179,16 @@ const EDucation = () => {
     return (
         <div>
             <p className='font-bold font-syne text-[32px] leading-8 pb-[24px]'>Education</p>
-            <div className='gap-[25px] flex flex-col'>
-                <div className='bg-[#0808080A] rounded-2xl hover:bg-white px-[24px] pb-[24px] pt-[30px] '>
-                    <div className='flex gap-[104px]'>
-                        <div>
+            <div className='gap-[25px] grid grid-cols-1 sm:grid-cols-2'>
+                <div className='bg-[#0808080A] rounded-2xl hover:bg-white px-[24px] pb-[24px] pt-[30px] md:max-w-[600px] lg:max-w-[746px]'>
+                    <div className=' flex-col flex gap-[35px] lg:gap-[104px]'>
+                        <div className='text-[14px] leading-[1.4] '>
                             <p>01/2020 – 07/2025</p>
                         </div>
                         <div >
                             <div className='flex items-center gap-[8px]'>
                                 <span className='flex '><hr className='rounded-full w-[10px] h-[10px] bg-[#FFB646] border-[#FFB646]' /></span>
-                                <h3 className='text-[14px] leading-7 font-DM_Sans'>Dhaka Commerce College</h3>
+                                <h3 className='text-[14px] leading-[2] font-DM_Sans'>Dhaka Commerce College</h3>
                             </div>
                             <h2 className='font-bold font-syne text-[24px] leading-8'>BBA in Accounting</h2>
                         </div>
@@ -194,15 +196,15 @@ const EDucation = () => {
 
                 </div>
 
-                <div className='bg-[#0808080A] rounded-2xl hover:bg-white px-[24px] pb-[24px] pt-[30px]'>
-                    <div className='flex gap-[104px]'>
-                        <div>
+                <div className='bg-[#0808080A] rounded-2xl hover:bg-white px-[24px] pb-[24px] pt-[30px] md:max-w-[600px] lg:max-w-[746px]'>
+                    <div className='flex flex-col gap-[35px] lg:gap-[104px]'>
+                        <div className='text-[14px] leading-[1.4] '>
                             <p>06/2017 – 04/2019</p>
                         </div>
                         <div >
                             <div className='flex items-center gap-[8px]'>
                                 <span className='flex '><hr className='rounded-full w-[10px] h-[10px] bg-[#FFB646] border-[#FFB646]' /></span>
-                                <h3 className='text-[14px] leading-7 font-DM_Sans'>Madaripur Govt. College</h3>
+                                <h3 className='text-[14px] leading-[2] font-DM_Sans'>Madaripur Govt. College</h3>
                             </div>
                             <h2 className='font-bold font-syne text-[24px] leading-8'>Business Studies</h2>
                         </div>
@@ -210,15 +212,15 @@ const EDucation = () => {
 
                 </div>
 
-                <div className='bg-[#0808080A] rounded-2xl hover:bg-white px-[24px] pb-[24px] pt-[30px]'>
-                    <div className='flex gap-[104px]'>
-                        <div>
+                <div className='bg-[#0808080A] rounded-2xl hover:bg-white px-[24px] pb-[24px] pt-[30px] md:max-w-[600px] lg:max-w-[746px]'>
+                    <div className='flex flex-col gap-[35px] lg:gap-[104px]'>
+                        <div className='text-[14px] leading-[1.4] '>
                             <p>01/2009 – 03/2017</p>
                         </div>
                         <div >
                             <div className='flex items-center gap-[8px]'>
                                 <span className='flex '><hr className='rounded-full w-[10px] h-[10px] bg-[#FFB646] border-[#FFB646]' /></span>
-                                <h3 className='text-[14px] leading-7 font-DM_Sans'>United Islamia Govt. High School</h3>
+                                <h3 className='text-[14px] leading-[2] font-DM_Sans'>United Islamia Govt. High School</h3>
                             </div>
                             <h2 className='font-bold font-syne text-[24px] leading-8'>Business Studies</h2>
                         </div>
@@ -236,77 +238,77 @@ const SKills = () => {
         <div>
             <div>
                 <h2 className='font-bold font-syne text-[32px] leading-8 pb-[24px]'>Skills</h2>
-                <div className='grid grid-cols-3 gap-[16px] mb-[20px]'>
-                    <div className='bg-[#0808080A] rounded-2xl hover:bg-white py-[50px] pl-[20px] pr-[70px] '>
-                        <div className='flex gap-[16px]'>
-                            <div>
-                                <VscVscode className='w-[32px] h-[32px]' />
-                            </div>
-                            <div>
-                                <p className='font-bold text-[20px] leading-7 font-syne'>React JS</p>
-                                <p className='text-[14px] leading-5 text-[#080808CC]'>(90%)</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='bg-[#0808080A] rounded-2xl hover:bg-white py-[50px] pl-[20px] pr-[70px] '>
-                        <div className='flex gap-[16px]'>
-                            <div>
-                                <VscVscode className='w-[32px] h-[32px]' />
-                            </div>
-                            <div>
-                                <p className='font-bold text-[20px] leading-7 font-syne'>React JS</p>
-                                <p className='text-[14px] leading-5 text-[#080808CC]'>(90%)</p>
+                <div >
+                    <div className='grid grid-cols-1  sm:grid-cols-2 gap-[16px] mb-[20px]'>
+                        <div className='bg-[#0808080A] rounded-2xl hover:bg-white py-[24px] pl-[20px] pr-[70px] '>
+                            <div className='flex gap-[16px]'>
+                                <div>
+                                    <VscVscode className='w-[32px] h-[32px]' />
+                                </div>
+                                <div>
+                                    <p className='font-bold text-[20px] leading-7 font-syne'>React JS</p>
+                                    <p className='text-[14px] leading-5 text-[#080808CC]'>(90%)</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className='bg-[#0808080A] rounded-2xl hover:bg-white py-[50px] pl-[20px] pr-[70px]'>
-                        <div className='flex gap-[16px]'>
-                            <div>
-                                <VscVscode className='w-[32px] h-[32px]' />
-                            </div>
-                            <div>
-                                <p className='font-bold text-[20px] leading-7 font-syne'>React JS</p>
-                                <p className='text-[14px] leading-5 text-[#080808CC]'>(90%)</p>
+                        <div className='bg-[#0808080A] rounded-2xl hover:bg-white py-[24px] pl-[20px] pr-[70px] '>
+                            <div className='flex gap-[16px]'>
+                                <div>
+                                    <VscVscode className='w-[32px] h-[32px]' />
+                                </div>
+                                <div>
+                                    <p className='font-bold text-[20px] leading-7 font-syne'>React JS</p>
+                                    <p className='text-[14px] leading-5 text-[#080808CC]'>(90%)</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div className='grid grid-cols-3 gap-[16px]'>
-                    <div className='bg-[#0808080A] rounded-2xl hover:bg-white py-[50px] pl-[20px] pr-[70px] '>
-                        <div className='flex gap-[16px]'>
-                            <div>
-                                <VscVscode className='w-[32px] h-[32px]' />
-                            </div>
-                            <div>
-                                <p className='font-bold text-[20px] leading-7 font-syne'>React JS</p>
-                                <p className='text-[14px] leading-5 text-[#080808CC]'>(90%)</p>
+                        <div className='bg-[#0808080A] rounded-2xl hover:bg-white py-[24px] pl-[20px] pr-[70px]'>
+                            <div className='flex gap-[16px]'>
+                                <div>
+                                    <VscVscode className='w-[32px] h-[32px]' />
+                                </div>
+                                <div>
+                                    <p className='font-bold text-[20px] leading-7 font-syne'>React JS</p>
+                                    <p className='text-[14px] leading-5 text-[#080808CC]'>(90%)</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className='bg-[#0808080A] rounded-2xl hover:bg-white py-[50px] pl-[20px] pr-[70px] '>
-                        <div className='flex gap-[16px]'>
-                            <div>
-                                <VscVscode className='w-[32px] h-[32px]' />
-                            </div>
-                            <div>
-                                <p className='font-bold text-[20px] leading-7 font-syne'>React JS</p>
-                                <p className='text-[14px] leading-5 text-[#080808CC]'>(90%)</p>
+                        <div className='bg-[#0808080A] rounded-2xl hover:bg-white py-[24px] pl-[20px] pr-[70px] '>
+                            <div className='flex gap-[16px]'>
+                                <div>
+                                    <VscVscode className='w-[32px] h-[32px]' />
+                                </div>
+                                <div>
+                                    <p className='font-bold text-[20px] leading-7 font-syne'>React JS</p>
+                                    <p className='text-[14px] leading-5 text-[#080808CC]'>(90%)</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className='bg-[#0808080A] rounded-2xl hover:bg-white py-[50px] pl-[20px] pr-[70px]'>
-                        <div className='flex gap-[16px]'>
-                            <div>
-                                <VscVscode className='w-[32px] h-[32px]' />
+                        <div className='bg-[#0808080A] rounded-2xl hover:bg-white py-[24px] pl-[20px] pr-[70px] '>
+                            <div className='flex gap-[16px]'>
+                                <div>
+                                    <VscVscode className='w-[32px] h-[32px]' />
+                                </div>
+                                <div>
+                                    <p className='font-bold text-[20px] leading-7 font-syne'>React JS</p>
+                                    <p className='text-[14px] leading-5 text-[#080808CC]'>(90%)</p>
+                                </div>
                             </div>
-                            <div>
-                                <p className='font-bold text-[20px] leading-7 font-syne'>React JS</p>
-                                <p className='text-[14px] leading-5 text-[#080808CC]'>(90%)</p>
+                        </div>
+
+                        <div className='bg-[#0808080A] rounded-2xl hover:bg-white py-[24px] pl-[20px] pr-[70px]'>
+                            <div className='flex gap-[16px]'>
+                                <div>
+                                    <VscVscode className='w-[32px] h-[32px]' />
+                                </div>
+                                <div>
+                                    <p className='font-bold text-[20px] leading-7 font-syne'>React JS</p>
+                                    <p className='text-[14px] leading-5 text-[#080808CC]'>(90%)</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -322,7 +324,41 @@ const AWards = () => {
             <div>
                 <h2 className='font-bold font-syne text-[32px] leading-8 pb-[24px]'>Awards</h2>
                 <div className='flex flex-col gap-[20px]'>
-                    <div className='grid grid-cols-2 items-center justify-between gap-4'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 items-center justify-between gap-4'>
+                        <div className='bg-[#0808080A] rounded-2xl hover:bg-white px-[24px] pb-[24px] pt-[30px] '>
+                            <div className='flex justify-between'>
+                                <div>
+                                    <Image src={webby} alt='award' />
+                                </div>
+
+                                <p className='text-[14px] leading-5 text-[#080808]'>2018</p>
+                            </div>
+                            <div className='pt-[32px]'>
+                                <div className='flex items-center gap-[8px]'>
+                                    <span className='flex '><hr className='rounded-full w-[10px] h-[10px] bg-[#FFB646] border-[#FFB646]' /></span>
+                                    <h3 className='text-[14px] leading-7 font-DM_Sans pb-[4px]'>Winner</h3>
+                                </div>
+                                <h2 className='font-bold font-syne text-[24px] leading-8'>01X  Developer Award</h2>
+                            </div>
+                        </div>
+
+                        <div className='bg-[#0808080A] rounded-2xl hover:bg-white px-[24px] pb-[24px] pt-[30px] '>
+                            <div className='flex justify-between'>
+                                <div>
+                                    <Image src={webby} alt='award' />
+                                </div>
+
+                                <p className='text-[14px] leading-5 text-[#080808]'>2018</p>
+                            </div>
+                            <div className='pt-[32px]'>
+                                <div className='flex items-center gap-[8px]'>
+                                    <span className='flex '><hr className='rounded-full w-[10px] h-[10px] bg-[#FFB646] border-[#FFB646]' /></span>
+                                    <h3 className='text-[14px] leading-7 font-DM_Sans pb-[4px]'>Winner</h3>
+                                </div>
+                                <h2 className='font-bold font-syne text-[24px] leading-8'>01X  Developer Award</h2>
+                            </div>
+                        </div>
+
                         <div className='bg-[#0808080A] rounded-2xl hover:bg-white px-[24px] pb-[24px] pt-[30px] '>
                             <div className='flex justify-between'>
                                 <div>
@@ -359,41 +395,7 @@ const AWards = () => {
                     </div>
 
                     <div className='grid grid-cols-2 items-center justify-between gap-4'>
-                        <div className='bg-[#0808080A] rounded-2xl hover:bg-white px-[24px] pb-[24px] pt-[30px] '>
-                            <div className='flex justify-between'>
-                                <div>
-                                    <Image src={webby} alt='award' />
-                                </div>
-
-                                <p className='text-[14px] leading-5 text-[#080808]'>2018</p>
-                            </div>
-                            <div className='pt-[32px]'>
-                                <div className='flex items-center gap-[8px]'>
-                                    <span className='flex '><hr className='rounded-full w-[10px] h-[10px] bg-[#FFB646] border-[#FFB646]' /></span>
-                                    <h3 className='text-[14px] leading-7 font-DM_Sans pb-[4px]'>Winner</h3>
-                                </div>
-                                <h2 className='font-bold font-syne text-[24px] leading-8'>01X  Developer Award</h2>
-                            </div>
-                        </div>
-
-                        <div className='bg-[#0808080A] rounded-2xl hover:bg-white px-[24px] pb-[24px] pt-[30px] '>
-                            <div className='flex justify-between'>
-                                <div>
-                                    <Image src={webby} alt='award' />
-                                </div>
-
-                                <p className='text-[14px] leading-5 text-[#080808]'>2018</p>
-                            </div>
-                            <div className='pt-[32px]'>
-                                <div className='flex items-center gap-[8px]'>
-                                    <span className='flex '><hr className='rounded-full w-[10px] h-[10px] bg-[#FFB646] border-[#FFB646]' /></span>
-                                    <h3 className='text-[14px] leading-7 font-DM_Sans pb-[4px]'>Winner</h3>
-                                </div>
-                                <h2 className='font-bold font-syne text-[24px] leading-8'>01X  Developer Award</h2>
-                            </div>
-                        </div>
                     </div>
-
                 </div>
 
 
