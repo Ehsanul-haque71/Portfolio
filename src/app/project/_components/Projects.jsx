@@ -24,24 +24,25 @@ const Project = () => {
             <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[auto_2fr] gap-[24px]  pb-[28px]'>
               <div className='relative z-[-2]'>
                 <Image src={workOne} alt='project1' />
-                <Link href={"/project"} className='flex justify-between absolute bottom-[10px] left-[25px]  z-[2] cursor-pointer'>
-                  <p className='font-syne font-bold text:[20px] lg:text-[32px] leading-[1.2] text-white '>Oxilex Dashboard design</p>
-                  <span><MdArrowOutward className='w-[40px] h-[40px] text-white' /></span>
+                <Link href={"/project"} className='flex items-center gap-[10px] sm:gap-[60px] absolute bottom-[10px] lg:bottom-[15px] left-[25px]  z-[2] cursor-pointer'>
+                  <p className='font-syne font-bold text-[20px] sm:text-[17px] lg:text-[29px] leading-[1.2] text-white '>Oxilex Dashboard design</p>
+                  <span><MdArrowOutward className='w-[27px] h-[27px] lg:w-[40px] lg:h-[40px] text-white' /></span>
                 </Link>
               </div>
               <Image className='rounded-2xl  md:min-h-[257px] lg:min-h-[380px]' src={cheffest} alt='project2' />
+              
             </div>
 
             {/* 2nd layer */}
-            <div className='grid grid-cols-3 gap-[24px] pb-[28px]'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[24px] pb-[28px] max-w-full'>
               <Image src={workTwo} alt='projectImg' />
               <Image src={workThree} alt='projectImg' />
               <Image src={workFour} alt='projectImgprojectImg' />
             </div>
 
             {/* 3rd layer */}
-            <div className='grid grid-cols-[auto_1fr] gap-[24px]'>
-              <Image className='rounded-2xl max-w-[746px] h-[380px]' src={Por_right} alt='projectImg' />
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[auto_1fr] gap-[24px]'>
+              <Image className='rounded-2xl lg:min-w-[257px] lg:min-h-[380px]' src={Por_right} alt='projectImg' />
               <Image src={workFive} alt='projectImg' />
             </div>
           </div>
