@@ -41,9 +41,9 @@ const Project = () => {
             </div>
 
             {/* 3rd layer */}
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[auto_1fr] gap-[24px]'>
-              <Image className='rounded-2xl lg:min-w-[257px] lg:min-h-[380px]' src={Por_right} alt='projectImg' />
-              <Image src={workFive} alt='projectImg' />
+            <div className='grid grid-cols-1 lg:grid-cols-[auto_1fr]  gap-[24px]'>
+              <Image className='rounded-2xl w-full h-full' src={Por_right} alt='projectImg'/>
+              <Image className='w-full h-full' src={workFive} alt='projectImg'/>
             </div>
           </div>
         </div>

@@ -13,8 +13,9 @@ const DetailsMe = () => {
             <section className='pt-[180px] bg-[#FFE9D9]'>
                 {/* upper side */}
                 <div className='container'>
-                    <div className='max-w-[1075px] pb-[354px] mx-auto relative'>
-                        <div className='grid grid-cols-2 items-center'>
+                    <div className='max-w-[1075px] pb-[145px] sm:pb-[195px] md:pb-[240px] lg:pb-[354px] mx-auto relative'>
+                        <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-[20px] '>
+
                             <div>
                                 <div className='flex gap-3 pt-6 pb-3'>
                                     <div className='flex items-center gap-[15px]'>
@@ -26,37 +27,41 @@ const DetailsMe = () => {
                                         <p className='text-[14px] text-[#FF9330] leading-[20px]'>03 May 2019</p>
                                     </div>
                                 </div>
-                                <div className='font-bold font-syne text-[44px] leading-[54px]'>
+                                <div className='font-bold font-syne text-[25px] sm:text-[27px] md:text-[44px] leading-[54px]'>
                                     <h1>Mendero fintech dashboard design </h1>
                                 </div>
                             </div>
 
-                            <div className=' '>
-                                <div className='grid grid-cols-3 mr-[34px]'>
+                            {/* right */}
+                            <div className='mb-7'>
+                                <div className='grid grid-cols-2 md:grid-cols-3 pb-[15px] md:pb-[20px]'>
                                     <div>
                                         <p className='text-[14px] leading-5'>client</p>
-                                        <p className='font-bold font-DM_Sans text-[15px] leading-[16px] pt-[8px]'>Mashorom</p>
+                                        <p className='font-bold font-DM_Sans text-[11px] lg:text-[15px] leading-[16px] pt-[8px]'>Mashorom</p>
                                     </div>
 
                                     <div>
                                         <p className='text-[14px] leading-5'>Category</p>
-                                        <p className='font-bold font-DM_Sans text-[15px] leading-[16px] pt-[8px]'>User Experience</p>
+                                        <p className='font-bold font-DM_Sans text-[11px] lg:text-[15px] leading-[16px] pt-[8px]'>User Experience</p>
                                     </div>
 
                                     <div>
                                         <p className='text-[14px] leading-5'>Tools</p>
-                                        <p className='font-bold font-DM_Sans text-[15px] leading-[16px] pt-[8px]'>Figma, Webflow</p>
+                                        <p className='font-bold font-DM_Sans text-[11px] lg:text-[15px] leading-[16px] pt-[8px]'>Figma, Webflow</p>
                                     </div>
 
                                 </div>
-                                <div className='pt-[24px] grid grid-cols-3 mr-[34px] '>
+
+                                <div className='grid grid-cols-2 md:grid-cols-3'>
+
                                     <div>
                                         <p className='text-[14px] leading-5'>Start date</p>
-                                        <p className='font-bold font-DM_Sans text-[15px] leading-[16px] pt-[8px]'>09/01/ 2020</p>
+                                        <p className='font-bold font-DM_Sans text-[11px] lg:text-[15px] leading-[16px] pt-[8px]'>09/01/ 2020</p>
                                     </div>
+
                                     <div>
                                         <p className='text-[14px] leading-5'>End date</p>
-                                        <p className='font-bold font-DM_Sans text-[15px] leading-[16px] pt-[8px]'>09/01/ 2020</p>
+                                        <p className='font-bold font-DM_Sans text-[11px] lg:text-[15px] leading-[16px] pt-[8px]'>09/01/ 2020</p>
                                     </div>
                                 </div>
                             </div>
@@ -67,20 +72,16 @@ const DetailsMe = () => {
                             <Image className='rounded-2xl' src={Por_right} alt='portfolio' />
                         </div>
                     </div>
-
-
-
                 </div>
-
             </section>
 
 
-            <section className='bg-white pt-[340px]'>
+            <section className='bg-white pt-[185px] sm:pt-[190px] md:pt-[235px] lg:pt-[340px]'>
                 <div className="container">
                     <div className='max-w-[1075px] mx-auto'>
                         {/* Overview */}
-                        <div className=''>
-                            <h3 className='font-bold font-syne text-[32px] leading-[40px]'>Overview</h3>
+                        <div>
+                            <h3 className='font-bold font-syne text-[21px]  md:text-[32px] leading-[1.2]'>Overview</h3>
                             <p className='pt-[16px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>
                                 Minimalism combined with elements of french typography and brutalism helped us to realize the site exactly as we imagined with the client at the beginning: visually restrained, but stylish. Informative and pleasant to use, with an elegant aftertaste of a serious financial institution. Combined with elements of french typography and visually restrained, but stylish. Informative and pleasant to use, with an elegant aftertaste of a serious financial institutional client, and close collaboration.
                             </p>
@@ -155,12 +156,12 @@ const DetailsMe = () => {
 
                             </div> */}
 
-                           
+
 
                         </div>
                     </div>
 
-                    <Recent button={false} className={"bg-white"} sectionTitle={"Related work"}/>
+                    <Recent button={false} className={"bg-white"} sectionTitle={"Related work"} />
                 </div>
             </section>
         </>
