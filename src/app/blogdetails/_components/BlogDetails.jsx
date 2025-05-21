@@ -23,8 +23,8 @@ const BlogDetails = () => {
         <>
             <section className='bg-[#FFE9D9]'>
                 <div className='container  '>
-                    <div className='max-w-[1075px] mx-auto pb-[382px] relative'>
-                        <div className='font-bold font-syne text-[44px] leading-[54px] pt-[160px]'>
+                    <div className='max-w-[1075px] mx-auto pb-[185px] md:pb-[250px] lg:pb-[382px] relative'>
+                        <div className='font-bold font-syne text-[15px] sm:text-[23px] md:text-[44px] leading-[1.2] pt-[135px] md:pt-[160px]'>
                             <h1 className='mr-[100px]'>Designing the perfect feature
                                 comparison table</h1>
                         </div>
@@ -39,7 +39,7 @@ const BlogDetails = () => {
 
 
 
-            <section className='bg-white pt-[340px]'>
+            <section className='bg-white pt-[195px] sm:pt-[250px] lg:pt-[340px]'>
                 <div className='container'>
                     <div className='max-w-[1075px] mx-auto'>
                         <div className='flex gap-[24px] pb-[32px]'>
@@ -68,37 +68,37 @@ const BlogDetails = () => {
                         <div>
                             {/* About the position */}
                             <div className='py-[48px]'>
-                                <h2 className=' font-bold font-syne text-[24px] leading-[32px]'>About the position</h2>
+                                <h2 className=' font-bold font-syne text-[19px] md:text-[24px] leading-[1.3]'>About the position</h2>
                                 <p className='pt-[24px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>
                                     Everyone in my team works towards the samegoal. This enabled our teams to ship new ideas and feel more capable. Podcasting operational — change management inside of workflows. Completely synergize.
                                 </p>
 
-                                <p className='pt-[35px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself</p>
+                                <p className='pt-[35px] font-DM_Sans text-[13px] md:text-[18px] leading-[1.2] text-[#08080899]'>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself</p>
 
-                                <p className='pt-[40px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>
+                                <p className='pt-[40px] font-DM_Sans text-[13px] md:text-[18px] leading-[1.2] text-[#08080899]'>
                                     On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.
                                 </p>
                             </div>
 
                             {/* Image */}
-                            <div className='flex justify-between pb-[48px]'>
+                            <div className='grid grid-cols-2 gap-[10px] md:gap-[20px] pb-[48px]'>
                                 <Image src={leftImg} alt='left' />
                                 <Image src={rightImg} alt='left' />
                             </div>
 
                             {/* Learning the basics */}
                             <div>
-                                <h2 className=' font-bold font-syne text-[24px] leading-[32px]'>1. Learning the basics</h2>
-                                <p className='pt-[24px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>Everyone in my team works towards the samegoal. This enabled our teams to ship new ideas and feel more capable. Podcasting operational — change management inside of workflows. Completely synergize.</p>
-                                <p className='pt-[40px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>
+                                <h2 className=' font-bold font-syne  text-[19px] md:text-[24px] leading-[1.3]'>1. Learning the basics</h2>
+                                <p className='pt-[24px] font-DM_Sans text-[13px] md:text-[18px] leading-[1.2] text-[#08080899]'>Everyone in my team works towards the samegoal. This enabled our teams to ship new ideas and feel more capable. Podcasting operational — change management inside of workflows. Completely synergize.</p>
+                                <p className='pt-[40px] font-DM_Sans text-[13px] md:text-[18px] leading-[1.2] text-[#08080899]'>
                                     But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure 
                                 </p>
                             </div>
 
                             <div className='pt-[48px]'>
-                                <h2 className=' font-bold font-syne text-[24px] leading-[32px]'>2. Learning the basics</h2>
-                                <p className='pt-[24px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>Everyone in my team works towards the samegoal. This enabled our teams to ship new ideas and feel more capable. Podcasting operational — change management inside of workflows. Completely synergize.</p>
-                                <p className='pt-[40px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>
+                                <h2 className=' font-bold font-syne text-[19px] md:text-[24px] leading-[1.3]'>2. Learning the basics</h2>
+                                <p className='pt-[24px] font-DM_Sans text-[13px] md:text-[18px] leading-[1.2] text-[#08080899]'>Everyone in my team works towards the samegoal. This enabled our teams to ship new ideas and feel more capable. Podcasting operational — change management inside of workflows. Completely synergize.</p>
+                                <p className='pt-[40px] font-DM_Sans text-[13px] md:text-[18px] leading-[1.2] text-[#08080899]'>
                                     But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself 
                                 </p>
                             </div>

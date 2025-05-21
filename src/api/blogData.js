@@ -16,7 +16,7 @@ export const blogData = [
         image: Blog2,
         category: "UI Design",
         publishDate: "03 May 2020",
-        title: "Right-lo-left behind development in mobile web design"
+        title: "Connect craft: Reading the smart experience"
     },
     {
         id: 3,
@@ -30,6 +30,6 @@ export const blogData = [
         image: Blog4,
         category: "UI Design",
         publishDate: "03 May 2019",
-        title: "Right-lo-left behind development in mobile web design"
+        title: "Connect craft: Reading the smart experience"
     }
 ]

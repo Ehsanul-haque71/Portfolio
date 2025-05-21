@@ -17,7 +17,7 @@ const DetailsMe = () => {
                         <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-[20px] '>
 
                             <div>
-                                <div className='flex gap-3 pt-6 pb-3'>
+                                <div className='flex gap-3 pb-3'>
                                     <div className='flex items-center gap-[15px]'>
                                         <span className='flex'><hr className='rounded-full w-[10px] h-[10px] bg-black' /></span>
                                         <p className='text-[14px] text-black leading-[20px]'>UI Design</p>
@@ -27,7 +27,7 @@ const DetailsMe = () => {
                                         <p className='text-[14px] text-[#FF9330] leading-[20px]'>03 May 2019</p>
                                     </div>
                                 </div>
-                                <div className='font-bold font-syne text-[25px] sm:text-[27px] md:text-[44px] leading-[54px]'>
+                                <div className='font-bold font-syne text-[23px] sm:text-[27px] md:text-[35px] lg:text-[44px] leading-[1.2]'>
                                     <h1>Mendero fintech dashboard design </h1>
                                 </div>
                             </div>
@@ -82,16 +82,16 @@ const DetailsMe = () => {
                         {/* Overview */}
                         <div>
                             <h3 className='font-bold font-syne text-[21px]  md:text-[32px] leading-[1.2]'>Overview</h3>
-                            <p className='pt-[16px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>
+                            <p className='pt-[16px] font-DM_Sans text-[13px] md:text-[18px]  leading-[1.5] text-[#08080899]'>
                                 Minimalism combined with elements of french typography and brutalism helped us to realize the site exactly as we imagined with the client at the beginning: visually restrained, but stylish. Informative and pleasant to use, with an elegant aftertaste of a serious financial institution. Combined with elements of french typography and visually restrained, but stylish. Informative and pleasant to use, with an elegant aftertaste of a serious financial institutional client, and close collaboration.
                             </p>
 
-                            <p className='pt-[40px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>
+                            <p className='pt-[40px] font-DM_Sans text-[13px] md:text-[18px]  leading-[1.5] text-[#08080899]'>
                                 That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not only reflects who you are and what you stand for, but words that truly land with those that read them, calling your audience in and making them want more.
                             </p>
 
-                            <div className='pt-[40px]'>
-                                <ul className='font-bold font-syne text-[20px] leading-7 custom_square list-inside pl-[4px]'>
+                            <div className='pt-[25px] md:pt-[40px]'>
+                                <ul className='font-bold font-syne text-[15px] md:text-[20px] leading-7 custom_square list-inside pl-[4px]'>
                                     <li>Advantage</li>
                                     <li>Accomplished</li>
                                     <li>Marketplace startups</li>
@@ -101,63 +101,34 @@ const DetailsMe = () => {
                         </div>
 
                         {/* Typography */}
-                        <div className='pt-[48px] pb-[48px]'>
-                            <h2 className='font-bold font-syne text-[32px] leading-[40px]'>Typography</h2>
-                            <p className='pt-[16px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>
+                        <div className='pt-[30px] md:pt-[48px] pb-[48px]'>
+                            <h2 className='font-bold font-syne text-[21px] md:text-[32px] leading-[1.3]'>Typography</h2>
+                            <p className='pt-[16px] font-DM_Sans text-[13px] md:text-[18px] leading-[1.5] text-[#08080899]'>
                                 The basic idea was to find a balance between the thin, wispy sans-serif used to indicate a ‘futuristic‘ tone, and a bold, masculine font synonymous with ‘construction‘. We came up with something in the middle, leaning towards lighter-weighted fonts, but still with a hint of that blocky ‘construction’ vibe. We use Chaney for general display and when we want to drive attention to the content, and the technical and geometric Sora font for the body copy and paste overall hierachy.
                             </p>
                         </div>
 
-                        <div className='grid grid-cols-[auto_1fr] gap-[24px]'>
-                            <Image src={post1} alt='left' />
-                            <Image src={post2} alt='right' />
+                        <div className='grid grid-cols-1 md:grid-cols-[300px_1fr] lg:grid-cols-[380px_1fr]  gap-[24px]'>
+                            <div >
+                            <Image className='w-full h-full' src={post1} alt='left' />
+                            </div>
+
+                            <div >
+                            <Image className='w-full h-full' src={post2} alt='right' />
+                            </div>
                         </div>
 
                         {/* Conclusion  */}
                         <div className='pt-[48px]'>
-                            <h2 className='font-bold font-syne text-[32px] leading-[40px]'>Conclusion </h2>
+                            <h2 className='font-bold font-syne text-[21px] md:text-[32px] leading-[40px]'>Conclusion </h2>
 
-                            <div className='flex'>
-                                <p className='pt-[16px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>The basic idea was to find a balance between the thin, wispy sans-serif used to indicate a ‘futuristic‘ tone, and a bold, masculine font synonymous with ‘construction‘. We came up with something in the middle, leaning towards lighter-weighted fonts, but still with a hint of that blocky ‘construction’ vibe. We use Chaney for general display and when we want to drive attention to the content, and the technical and geometric Sora font for the body copy and paste overall hierachy.</p>
+                            <div >
+                                <p className='pt-[16px] font-DM_Sans text-[13px] md:text-[18px] leading-[1.5] text-[#08080899]'>The basic idea was to find a balance between the thin, wispy sans-serif used to indicate a ‘futuristic‘ tone, and a bold, masculine font synonymous with ‘construction‘. We came up with something in the middle, leaning towards lighter-weighted fonts, but still with a hint of that blocky ‘construction’ vibe. We use Chaney for general display and when we want to drive attention to the content, and the technical and geometric Sora font for the body copy and paste overall hierachy.</p>
 
-                                <p className='pt-[16px] font-DM_Sans text-[18px] leading-[28px] text-[#08080899]'>
+                                <p className='pt-[16px] font-DM_Sans text-[13px] md:text-[18px] leading-[1.5] text-[#08080899]'>
                                     The basic idea was to find a balance between the thin, wispy sans-serif used to indicate a ‘futuristic‘ tone, and a bold, masculine font synonymous with ‘construction‘. We came up with something in the middle, leaning towards lighter-weighted fonts, but still with a hint of that blocky ‘construction’ vibe.
                                 </p>
                             </div>
-                            {/* <div className='container  py-[100px] '>
-                                <div className='flex flex-col items-center justify-center'>
-                                    <p className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne '>Portfolio</p>
-                                    <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-2 pb-10 relative  after:absolute after:rounded-full after:size-[62px] after:top-[13px] after:right-[116px] z-[1] after:bg-[#FF9330] after:z-[-1]'> <span>My recent work</span></h2>
-                                </div>
-                                <div className='grid grid-cols-2 gap-6'>
-                                    <div className=''>
-                                        <Image src={Por_left} className='w-[636px] h-[320px] rounded-2xl' alt='logo' />
-                                        <div className='flex gap-2 pt-[24px]'>
-                                            <button className="bg-transparent text-[#080808] w-[56px] h-[28px] px-[16px] py-[6px] rounded-full flex items-center justify-center font-DM_Sans cursor-pointer hover:text-white hover:bg-black border border-[#080808] ">APP </button>
-                                            <button className=' bg-transparent text-[#080808] w-[56px] h-[28px] px-[122px] py-[6px] rounded-full flex items-center justify-center font-DM_Sans cursor-pointer hover:text-white hover:bg-black border border-[#080808]'>DEVELOPMENT</button>
-                                        </div>
-                                        <div className='flex justify-between items-center pt-[12px]'>
-                                            <h4 className='text-[32px] font-semibold flex items-center gap-6 font-syne'>Basinik Finance App</h4>
-                                            <span > <MdArrowOutward className='w-6 h-6 ' /> </span>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <Image src={Por_right} className='w-[636px] h-[320px] rounded-2xl' alt='logo' />
-                                        <div className='flex gap-2 pt-[24px]'>
-                                            <button className="bg-transparent text-[#080808] w-[56px] h-[28px] px-[16px] py-[6px] rounded-full flex items-center justify-center font-DM_Sans cursor-pointer hover:text-white hover:bg-black border border-[#080808] ">APP </button>
-                                            <button className=' bg-transparent text-[#080808] w-[56px] h-[28px] px-[122px] py-[6px] rounded-full flex items-center justify-center font-DM_Sans cursor-pointer hover:text-white hover:bg-black border border-[#080808]'>DEVELOPMENT</button>
-                                        </div>
-                                        <div className='flex justify-between items-center pt-[12px]'>
-                                            <h4 className='text-[32px] font-semibold flex items-center gap-6 font-syne'>Oxilex Dashboard design</h4>
-                                            <span > <MdArrowOutward className='w-6 h-6 ' /> </span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div> */}
-
-
-
                         </div>
                     </div>
 
