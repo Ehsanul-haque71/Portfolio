@@ -91,7 +91,7 @@ const BlogDetails = () => {
                                 <h2 className=' font-bold font-syne  text-[19px] md:text-[24px] leading-[1.3]'>1. Learning the basics</h2>
                                 <p className='pt-[24px] font-DM_Sans text-[13px] md:text-[18px] leading-[1.2] text-[#08080899]'>Everyone in my team works towards the samegoal. This enabled our teams to ship new ideas and feel more capable. Podcasting operational — change management inside of workflows. Completely synergize.</p>
                                 <p className='pt-[40px] font-DM_Sans text-[13px] md:text-[18px] leading-[1.2] text-[#08080899]'>
-                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure 
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure
                                 </p>
                             </div>
 
@@ -99,13 +99,13 @@ const BlogDetails = () => {
                                 <h2 className=' font-bold font-syne text-[19px] md:text-[24px] leading-[1.3]'>2. Learning the basics</h2>
                                 <p className='pt-[24px] font-DM_Sans text-[13px] md:text-[18px] leading-[1.2] text-[#08080899]'>Everyone in my team works towards the samegoal. This enabled our teams to ship new ideas and feel more capable. Podcasting operational — change management inside of workflows. Completely synergize.</p>
                                 <p className='pt-[40px] font-DM_Sans text-[13px] md:text-[18px] leading-[1.2] text-[#08080899]'>
-                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself 
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself
                                 </p>
                             </div>
 
                             {/* icons */}
                             <div className='pt-[48px] '>
-                                <div className='flex items-center justify-between '>
+                                <div className='flex flex-wrap gap-[10px] items-center justify-between '>
                                     <div className='flex gap-[24px]'>
                                         <p className='font-DM_Sans text-[18px] leading-7 text-[#080808CC]'>share:</p>
                                         <div className='flex items-center gap-4 cursor-pointer'>
@@ -118,13 +118,13 @@ const BlogDetails = () => {
                                         </div>
                                     </div>
 
-                                    <div className='flex gap-2 '>
+                                    <div className='flex  gap-2 '>
                                         <Link href={"/project"} className="bg-transparent text-[#080808] w-[56px] h-[28px] px-[16px] py-[6px] rounded-full flex items-center justify-center font-DM_Sans cursor-pointer hover:text-white hover:bg-black border border-[#080808] ">App</Link>
 
                                         <Link href={"/project"} className=' bg-transparent text-[#080808] w-[56px] h-[28px] px-[122px] py-[6px] rounded-full flex items-center justify-center font-DM_Sans cursor-pointer hover:text-white hover:bg-black border border-[#080808]'>DEVELOPMENT</Link>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -133,110 +133,116 @@ const BlogDetails = () => {
 
 
 
-                <div className='container py-[120px]'>
-                    <div className='flex flex-col items-center justify-center'>
-                        <p className='leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne'>Blog</p>
-                        <h2 className='leading-[72px] text-[64px] font-bold font-syne pt-[10px] relative after:absolute after:size-[65px] after:bg-[#FF9330] z-[7] after:z-[-7] after:top-[17px] after:right-[65px] after:rounded-full'>Related post</h2>
-                    </div>
-                    <div className='grid grid-cols-4 gap-6'>
-                        {/* blog_1 */}
-                        <div className='pt-[48px]'>
-                            <div>
-                                <Image src={Blog1} alt='logo' />
-                            </div>
-                            <div className='flex gap-3 pt-6 pb-3'>
-                                <div className='flex items-center gap-[15px]'>
-                                    <span className='flex'><hr className='rounded-full w-[10px] h-[10px] bg-black' /></span>
-                                    <p className='text-[14px] text-black leading-[20px]'>UI Design</p>
-                                </div>
-                                <div className='flex items-center gap-[15px]'>
-                                    <span className='flex '><hr className='rounded-full w-[10px] h-[10px] bg-[#FF9330] border-[#FF9330]' /></span>
-                                    <p className='text-[14px] text-[#FF9330] leading-[20px]'>03 May 2019</p>
-                                </div>
-                            </div>
-
-                            <Link href={"/project"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
-                                <div >
-                                    <h3 className='font-syne text-2xl leading-8 font-bold  '>Right-lo-left behind development in mobile web design</h3>
-                                </div>
-                                <span ><MdArrowOutward className='w-6 h-6' /></span>
-                            </Link>
+                <div className='container '>
+                    <div className='py-[80px] md:py-[120px]'>
+                        <div className='flex flex-col items-center justify-center'>
+                            <p className='leading-[1.4] text-[17px] md:text-[20px] text-[#FF9330] font-bold font-syne'>Blog</p>
+                            <h2 className='leading-[1.1] text-[30px] md:text-[64px] font-bold font-syne pt-[10px] relative after:absolute after:size-[30px] md:after:size-[65px] after:bg-[#FF9330] z-[7] after:z-[-7] after:top-[15px] md:after:top-[17px] after:right-[25px] md:after:right-[65px] after:rounded-full'>Related post</h2>
                         </div>
+                        <div className='grid items-center justify-center sm:grid-cols-2 lg:grid-cols-4 gap-6'>
+                            {/* blog_1 */}
+                            <div className='pt-[50px] sm:pt-[48px]'>
+                                <div className='max-w-[306px]'>
+                                    <Image src={Blog1} alt='logo' />
+                                    <div className='flex gap-3 pt-6 pb-3'>
+                                        <div className='flex items-center gap-[15px]'>
+                                            <span className='flex'><hr className='rounded-full w-[10px] h-[10px] bg-black' /></span>
+                                            <p className='text-[14px] text-black leading-[20px]'>UI Design</p>
+                                        </div>
+                                        <div className='flex items-center gap-[15px]'>
+                                            <span className='flex '><hr className='rounded-full w-[10px] h-[10px] bg-[#FF9330] border-[#FF9330]' /></span>
+                                            <p className='text-[14px] text-[#FF9330] leading-[20px]'>03 May 2019</p>
+                                        </div>
+                                    </div>
 
-                        {/* blog_2 */}
-                        <div className='pt-[88px]'>
-                            <div>
-                                <Image src={Blog2} alt='logo' />
-                            </div>
-                            <div className='flex gap-3 pt-6 pb-3'>
-                                <div className='flex items-center gap-[15px]'>
-                                    <span className='flex'><hr className='rounded-full w-[10px] h-[10px] bg-black' /></span>
-                                    <p className='text-[14px] text-black leading-[20px]'>UI Design</p>
+                                    <Link href={"/blogdetails"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
+                                        <div >
+                                            <h3 className='font-syne text-[24px] lg:text-[24px] leading-[1.3] font-bold  '>Right-lo-left behind development in mobile web design</h3>
+                                        </div>
+                                        <span ><MdArrowOutward className='w-6 h-6' /></span>
+                                    </Link>
                                 </div>
-                                <div className='flex items-center gap-[15px]'>
-                                    <span className='flex '><hr className='rounded-full w-[10px] h-[10px] bg-[#FF9330] border-[#FF9330]' /></span>
-                                    <p className='text-[14px] text-[#FF9330] leading-[20px]'>03 May 2019</p>
+
+
+                            </div>
+                            {/* blog_2 */}
+                            <div className='pt-[50px] sm:pt-[88px]'>
+                                <div className='max-w-[306px]'>
+                                    <Image src={Blog2} alt='logo' />
+
+                                    <div className='flex gap-3 pt-6 pb-3'>
+                                        <div className='flex items-center gap-[15px]'>
+                                            <span className='flex'><hr className='rounded-full w-[10px] h-[10px] bg-black' /></span>
+                                            <p className='text-[14px] text-black leading-[20px]'>UI Design</p>
+                                        </div>
+                                        <div className='flex items-center gap-[15px]'>
+                                            <span className='flex '><hr className='rounded-full w-[10px] h-[10px] bg-[#FF9330] border-[#FF9330]' /></span>
+                                            <p className='text-[14px] text-[#FF9330] leading-[20px]'>03 May 2019</p>
+                                        </div>
+                                    </div>
+
+                                    <Link href={"/blogdetails"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330]'>
+                                        <div >
+                                            <h3 className='font-syne text-2xl leading-8 font-bold  '>Connect craft: Reading the smart experience</h3>
+                                        </div>
+                                        <span ><MdArrowOutward className='w-6 h-6' /></span>
+                                    </Link>
                                 </div>
                             </div>
 
-                            <Link href={"/blogdetails"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330]'>
-                                <div>
-                                    <h3 className='font-syne text-2xl leading-8 font-bold  '>Connect craft: Reading the smart experience</h3>
+
+                            {/* blog_3 */}
+                            <div className='pt-[50px] sm:pt-[48px]'>
+                                <div className='max-w-[306px]'>
+                                    <Image src={Blog3} alt='logo' />
+
+                                    <div className='flex gap-3 pt-6 pb-3'>
+                                        <div className='flex items-center gap-[15px]'>
+                                            <span className='flex'><hr className='rounded-full w-[10px] h-[10px] bg-black' /></span>
+                                            <p className='text-[14px] text-black leading-[20px]'>UI Design</p>
+                                        </div>
+                                        <div className='flex items-center gap-[15px]'>
+                                            <span className='flex '><hr className='rounded-full w-[10px] h-[10px] bg-[#FF9330] border-[#FF9330]' /></span>
+                                            <p className='text-[14px] text-[#FF9330] leading-[20px]'>03 May 2019</p>
+                                        </div>
+                                    </div>
+
+                                    <Link href={"/blogdetails"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
+                                        <div>
+                                            <h3 className='font-syne text-2xl leading-8 font-bold  '>Ecoglow: Sustainable skincare a brighter tomorrow</h3>
+                                        </div>
+                                        <span ><MdArrowOutward className='w-6 h-6' /></span>
+                                    </Link>
                                 </div>
-                                <span ><MdArrowOutward className='w-6 h-6' /></span>
-                            </Link>
+                            </div>
+
+
+                            {/* blog_4 */}
+                            <div className='pt-[50px] sm:pt-[88px]'>
+                                <div className='max-w-[306px]'>
+                                    <Image src={Blog4} alt='logo' />
+
+                                    <div className='flex gap-3 pt-6 pb-3'>
+                                        <div className='flex items-center gap-[15px]'>
+                                            <span className='flex'><hr className='rounded-full w-[10px] h-[10px] bg-black' /></span>
+                                            <p className='text-[14px] text-black leading-[20px]'>UI Design</p>
+                                        </div>
+                                        <div className='flex items-center gap-[15px]'>
+                                            <span className='flex '><hr className='rounded-full w-[10px] h-[10px] bg-[#FF9330] border-[#FF9330]' /></span>
+                                            <p className='text-[14px] text-[#FF9330] leading-[20px]'>03 May 2019</p>
+                                        </div>
+                                    </div>
+
+                                    <Link href={"/blogdetails"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
+                                        <div>
+                                            <h3 className='font-syne text-2xl leading-8 font-bold  '>Right-lo-left behind development in mobile web design</h3>
+                                        </div>
+                                        <span ><MdArrowOutward className='w-6 h-6' /></span>
+                                    </Link>
+                                </div>
+                            </div>
+
                         </div>
-
-
-                        {/* blog_3 */}
-                        <div className='pt-[48px]'>
-                            <div>
-                                <Image src={Blog3} alt='logo' />
-                            </div>
-                            <div className='flex gap-3 pt-6 pb-3'>
-                                <div className='flex items-center gap-[15px]'>
-                                    <span className='flex'><hr className='rounded-full w-[10px] h-[10px] bg-black' /></span>
-                                    <p className='text-[14px] text-black leading-[20px]'>UI Design</p>
-                                </div>
-                                <div className='flex items-center gap-[15px]'>
-                                    <span className='flex '><hr className='rounded-full w-[10px] h-[10px] bg-[#FF9330] border-[#FF9330]' /></span>
-                                    <p className='text-[14px] text-[#FF9330] leading-[20px]'>03 May 2019</p>
-                                </div>
-                            </div>
-
-                            <Link href={"/blogdetails"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
-                                <div>
-                                    <h3 className='font-syne text-2xl leading-8 font-bold  '>Ecoglow: Sustainable skincare a brighter tomorrow</h3>
-                                </div>
-                                <span ><MdArrowOutward className='w-6 h-6' /></span>
-                            </Link>
-                        </div>
-
-
-                        {/* blog_4 */}
-                        <div className='pt-[88px]'>
-                            <div>
-                                <Image src={Blog4} alt='logo' />
-                            </div>
-                            <div className='flex gap-3 pt-6 pb-3'>
-                                <div className='flex items-center gap-[15px]'>
-                                    <span className='flex'><hr className='rounded-full w-[10px] h-[10px] bg-black' /></span>
-                                    <p className='text-[14px] text-black leading-[20px]'>UI Design</p>
-                                </div>
-                                <div className='flex items-center gap-[15px]'>
-                                    <span className='flex '><hr className='rounded-full w-[10px] h-[10px] bg-[#FF9330] border-[#FF9330]' /></span>
-                                    <p className='text-[14px] text-[#FF9330] leading-[20px]'>03 May 2019</p>
-                                </div>
-                            </div>
-
-                            <Link href={"/blogdetails"} className='flex items-end justify-between cursor-pointer hover:text-[#FF9330] '>
-                                <div>
-                                    <h3 className='font-syne text-2xl leading-8 font-bold  '>Right-lo-left behind development in mobile web design</h3>
-                                </div>
-                                <span ><MdArrowOutward className='w-6 h-6' /></span>
-                            </Link>
-                        </div>
-
                     </div>
                 </div>
 
