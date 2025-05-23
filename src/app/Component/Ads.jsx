@@ -49,13 +49,9 @@ const Ads = () => {
     };
 
     return (
-        <section>
-            {/* <div >
-                <hr className='w-[1296px]' />
-            </div> */}
-
+        <section className='overflow-x-hidden'>
             <div className='container'>
-                <div className='border-y border-y-[#0808081A] max-[1296px]  mx-auto'>
+                <div className='border-y border-y-[#0808081A] max-w-full  mx-auto'>
                     <Slider className='my-[24px] ' {...settings}>
                         <div>
                             <Image src={Mat} alt="Mat" />
@@ -79,19 +75,6 @@ const Ads = () => {
                 </div>
             </div>
 
-            {/* <div className='my-[24px] flex gap-6 w-[1296px] items-center justify-between'>
-                <Image  src={Mat} alt='ads' />
-                <Image  src={Google} alt='ads' />
-                <Image  src={Factual} alt='ads' />
-                <Image  src={Airbnb} alt='ads' />
-                <Image  src={Case} alt='ads' />
-                <Image  src={Logitech} alt='ads' />
-                
-                </div> */}
-            {/* <div>
-
-                <hr className='w-[1296px]' />
-            </div> */}
         </section>
     )
 }

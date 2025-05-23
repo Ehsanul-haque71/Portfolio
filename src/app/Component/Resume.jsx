@@ -16,7 +16,7 @@ const Resume = () => {
     return (
         <div className=' bg-[#0808080A] py-[70px] lg:pt-[100px] lg:pb-[100px] '>
             <div className='container relative z-[1]'>
-                <div className=' absolute z-[10] bottom-[-60px] right-[15px] lg:top-[685px] lg:right-[-80px]'>
+                <div className=' absolute z-[10] bottom-[-40px] right-[15px] lg:bottom-[-30px] lg:right-[80px]'>
                     <Image className='block' src={star} alt='star_logo' />
                 </div>
                 <div className=' grid grid-cols-1 lg:grid-cols-2 gap-[50px] lg:gap-[134px]'>

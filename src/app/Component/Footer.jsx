@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <footer className='bg-black'>
+        <footer className='bg-black overflow-x-hidden'>
             <div className='container '>
                 <div className='pt-[119px] pb-[59px]'>
                     <div className=' gap-6'>
@@ -74,7 +74,7 @@ const Footer = () => {
 
 
                     <div >
-                        <div className="py-[72px] flex justify-center">
+                        <div className="py-[72px] flex justify-center overflow-hidden">
                             <h1 className="font-montserrat font-bold text-[clamp(2rem,10vw,10rem)] text-[#FFE9D9] whitespace-nowrap text-center">
                                 EHSANUL HAQUE
                             </h1>
