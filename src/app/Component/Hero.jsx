@@ -11,6 +11,8 @@ import Image from 'next/image';
 import Man from '@/app/Assets/man.png';
 import Link from 'next/link';
 import hero from "@/app/Assets/final_img.svg"
+import SpinBtn from './SpinBtn';
+
 
 
 const Hero = () => {
@@ -25,7 +27,7 @@ const Hero = () => {
     return (
         <section className='bg-[#FFE9D9] py-20 md:pt-[140px] md:pb-[126px] '>
             <div className='flex items-center container' >
-                
+
                 {/* left */}
 
                 <div className=' pt-[60px] left pl-[20px] lg:pl-[0px]'>
@@ -47,19 +49,19 @@ const Hero = () => {
                             <a href="https://www.facebook.com/profile.php?id=100008485058668">
                                 <FaFacebook className='w-[24px] h-[24px] hover:text-[#FFB646]' />
                             </a>
-                            
+
                             <a href='https://www.linkedin.com/in/mohd-ehsanul-haque/'>
-                            <FaLinkedinIn className='w-[24px] h-[24px] hover:text-[#FFB646]' />
+                                <FaLinkedinIn className='w-[24px] h-[24px] hover:text-[#FFB646]' />
                             </a>
 
-                             <a href='https://www.instagram.com/r_o_u_d_r_a_a_a?igsh=OGYwNGpzaWx2Z294'>
-                            <FaInstagram className='w-[24px] h-[24px] hover:text-[#FFB646]' />
+                            <a href='https://www.instagram.com/r_o_u_d_r_a_a_a?igsh=OGYwNGpzaWx2Z294'>
+                                <FaInstagram className='w-[24px] h-[24px] hover:text-[#FFB646]' />
                             </a>
 
                             <a href='https://github.com/Ehsanul-haque71'>
-                             <FaGithub className='w-[24px] h-[24px] hover:text-[#FFB646]' />
+                                <FaGithub className='w-[24px] h-[24px] hover:text-[#FFB646]' />
                             </a>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -67,7 +69,10 @@ const Hero = () => {
 
                 {/* right */}
                 <div className='hidden md:block md:w-[435px] lg:w-[600px] absolute top-0 right-0 z-10'>
-                    <Image className='w-full' src={hero} alt='Hero_item' />
+                    <Image className='w-full relative' src={hero} alt='Hero_item' />
+                </div>
+                <div className='mt-6 absolute hidden md:block md:bottom-[140px] md:right-[20px] lg:bottom-[35px] lg:right-[85px] z-11'>
+                    <SpinBtn />
                 </div>
             </div>
         </section>

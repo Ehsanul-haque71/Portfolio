@@ -55,7 +55,7 @@ const Specialties = () => {
                     <span className='leading-[1.4] text-[17px] lg:text-[20px] text-[#FF9330] font-bold font-syne'>Services</span>
                     <h1 className='leading-[72px] text-[37px] lg:text-[54px] font-bold font-syne pt-2 relative after:size-[40px] lg:after:size-[62px] after:rounded-full after:bg-[#FF9330] after:absolute after:top-[23px] lg:after:top-[15px] after:left-[0px] lg:after:left-[-1px] after:z-[-1]'><span className="absolute z-[100] "></span> <span>My</span> specialties</h1>
                 </div>
-                <div className='text-[11px] md:text-[15px] lg:text-[12px] leading-[28px] font-semibold lg:font-normal font-DM_Sans items-center pt-[0px]  lg:pt-[30px] text-[#08080899]'>
+                <div className='text-[14px] md:text-[15px] lg:text-[17px] leading-[1.5] font-semibold lg:font-normal font-DM_Sans items-center pt-[0px]  lg:pt-[30px] text-[#08080899]'>
                     Synergistically seize front-end methods of empowerment without extensive core competencies. Progressively repurpose alternative platforms
                 </div>
             </div>

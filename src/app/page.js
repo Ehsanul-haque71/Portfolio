@@ -21,6 +21,7 @@ export default function Home() {
       <Ads/>
       <Blog/>
       <Pricing/>
+      
     </div>
   );
 }
