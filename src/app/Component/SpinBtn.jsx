@@ -3,13 +3,14 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { FaArrowDownLong } from "react-icons/fa6";
+import Link from 'next/link';
 
 export default function SpinBtn() {
     const router = useRouter();
   
   const handleClick = (e) => {
     e.preventDefault(); 
-    router.push('/contact');
+    router.push('/contacts');
   };
   const textRef = useRef(null);
 
