@@ -12,10 +12,23 @@ import Man from '@/app/Assets/man.png';
 import Link from 'next/link';
 import hero from "@/app/Assets/final_img.svg"
 import SpinBtn from './SpinBtn';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 
 
 const Hero = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    }, []);
+
     useGSAP(() => {
         gsap.from('.left', {
             x: -50,
@@ -23,7 +36,7 @@ const Hero = () => {
             autoAlpha: 0,
 
         })
-    })
+    });
     return (
         <section className='bg-[#FFE9D9] py-20 md:pt-[140px] md:pb-[126px] '>
             <div className='flex items-center container' >
@@ -68,12 +81,14 @@ const Hero = () => {
 
 
                 {/* right */}
-                <div className='hidden md:block md:w-[435px] lg:w-[600px] absolute top-0 right-0 z-10'>
+
+                <div data-aos="zoom-in-left" className='hidden md:block md:w-[435px] lg:w-[600px] absolute top-0 right-0 z-10'>
                     <Image className='w-full relative' src={hero} alt='Hero_item' />
                 </div>
-                <div className='mt-6 absolute hidden md:block md:top-[-171px] md:right-[20px] lg:top-[175px] lg:right-[85px] z-11'>
+                <div data-aos="zoom-in-left" className='mt-6 absolute hidden  md:block md:top-[-171px] md:right-[20px] lg:bottom-0 lg:right-[85px] z-11'>
                     <SpinBtn />
                 </div>
+
             </div>
         </section>
 

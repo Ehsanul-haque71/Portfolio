@@ -1,17 +1,20 @@
+"use client"
 import Image from "next/image";
 import React from 'react'
 import Link from "next/link";
 import twelve from '@/app/Assets/twelve_plus.svg'
 import { MdArrowOutward } from "react-icons/md";
 import ServiceCard from "./ServiceCard";
-import sticker from "@/app/Assets/resume_sticker.svg"
-import service_icon_1 from '@/app/Assets/android.svg'
-import service_icon_2 from '@/app/Assets/Ui_Ux.svg'
-import service_icon_3 from '@/app/Assets/cart.svg'
-import service_icon_4 from '@/app/Assets/web.svg'
-import service_icon_5 from '@/app/Assets/brand.svg'
-import service_icon_6 from '@/app/Assets/touch.svg'
-
+import sticker from "@/app/Assets/resume_sticker.svg";
+import service_icon_1 from '@/app/Assets/android.svg';
+import service_icon_2 from '@/app/Assets/Ui_Ux.svg';
+import service_icon_3 from '@/app/Assets/cart.svg';
+import service_icon_4 from '@/app/Assets/web.svg';
+import service_icon_5 from '@/app/Assets/brand.svg';
+import service_icon_6 from '@/app/Assets/touch.svg';
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const serviceData = [
@@ -48,6 +51,14 @@ const serviceData = [
 ]
 
 const Specialties = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    }, []);
+
     return (
         <div className='container '>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[3px]  md:gap-[134px]  pl-[20px] lg:pl-[0px] pt-[100px] md:pt-[120px]'>
@@ -155,7 +166,7 @@ const Specialties = () => {
 
 
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 mt-[50px] lg:mt-[120px] gap-[95px] lg:gap-[134px]">
+            <div data-aos="zoom-in" className="grid grid-cols-1 lg:grid-cols-2 mt-[50px] lg:mt-[120px] gap-[95px] lg:gap-[134px]">
                 {/* left */}
                 <div>
                     <Image src={sticker} alt="img" />
@@ -163,7 +174,7 @@ const Specialties = () => {
 
 
                 {/* right */}
-                <div>
+                <div >
                     <div>
                         <p className="leading-[28px] text-[20px] text-[#FF9330] font-bold font-syne pb-[10px]">Hello I’m</p>
                         <h3 className="leading-[1.1] text-[36px] lg:text-[64px] font-bold font-syne pt-2 relative after:absolute after:rounded-full after:size-[30px] lg:after:size-[55px] after:bg-[#FF9330] after:top-[13px] lg:after:top-[15px] after:left-[0px] md:after:left-[-0px] lg:after:right-[378px] after:z-[-3]">

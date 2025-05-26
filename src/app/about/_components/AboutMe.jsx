@@ -7,9 +7,8 @@ import hbk from '@/app/Assets/hbk.svg';
 import Signature from "@/app/Assets/signature.png";
 
 
-// For example, in your main JS or component file (React e use korle)
 import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 
 const AboutMe = () => {
