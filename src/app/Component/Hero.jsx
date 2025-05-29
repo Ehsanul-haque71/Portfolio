@@ -83,9 +83,10 @@ const Hero = () => {
 
                 <div data-aos="zoom-in-left" className='hidden md:block md:w-[435px] lg:w-[600px] absolute top-0 right-0 z-10'>
                     <Image className='w-full' src={hero} alt='Hero_item' />
-                    <div data-aos="zoom-in-left" className='mt-6 absolute hidden  md:block md:top-[-171px] md:right-[20px] lg:bottom-0 lg:right-[85px] z-11'>
-                        <SpinBtn />
-                    </div>
+
+                </div>
+                <div data-aos="zoom-in-left" className='mt-6 fixed hidden md:block md:top-[-171px] md:right-[20px] lg:top-[290px] lg:right-[85px] z-11'>
+                    <SpinBtn />
                 </div>
 
             </div>
