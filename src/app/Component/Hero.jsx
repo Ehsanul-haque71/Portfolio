@@ -44,7 +44,7 @@ const Hero = () => {
                 {/* left */}
 
                 <div className=' pt-[60px] left pl-[20px] lg:pl-[0px]'>
-                    <h3 className=' text-[25px] lg:text-[32px] font-semibold flex items-center gap-3 md:gap-6'> <hr className='w-[55px] md:w-[60px] lg:w-[65px] text-[#080808]' /> Hello, I’m✌</h3>
+                    <h3 className=' text-[25px] lg:text-[32px] font-semibold flex items-center gap-3 md:gap-6'> <hr className='w-[55px] md:w-[60px] lg:w-[65px] text-[#080808]' /> Hello, I’m</h3>
                     <h1 className='relative font-syne leading-[1.2] font-bold text-[60px] md:text-[70px] lg:text-[93px]  pt-2 after:size-[50px] after:top-[18px] after:-left-[2px]  md:after:size-[57px]  lg:after:size-[80px] after:rounded-full after:bg-yellow-400 after:absolute md:after:top-[20px] lg:after:top-[25px]  md:after:-left-[0px] lg:after:-left-[5px] after:z-[-1] max-w-[498px]'> <span className='bg-amber-300 w-[70px] h-[70px]'></span> <span>Ehsanul</span> Haque</h1>
                     <p className='pt-6 md:text-[20px] lg:text-[24px] font-semibold font-syne'>Product Designer | Based in Bangladesh</p>
                     <div className='flex gap-[13px] sm:gap-[17px] pt-[30px] '>

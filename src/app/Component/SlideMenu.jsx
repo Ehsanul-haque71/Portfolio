@@ -25,20 +25,22 @@ const SlideMenu = ({ onMenuToggle,sideMenu, setSideMenu }) => {
 //     console.log('====================================');
 // }
 
-useEffect(()=> {
-    const handleOutsideClick = ()=> {
-        console.log("Outside Click");
+useEffect(() => {
+    const handleOutsideClick = (event) => {
+        if (slideBar.current && !slideBar.current.contains(event.target)) {
+            setSideMenu(false); // Close the sidebar
+        }
     };
-   
 
-    if(sideMenu) {
-        window.addEventListener("click", handleOutsideClick)
+    if (sideMenu) {
+        window.addEventListener("mousedown", handleOutsideClick);
     }
 
-    return ()=> {
-        window.removeEventListener("click",handleOutsideClick)
-    }
-}, [])
+    return () => {
+        window.removeEventListener("mousedown", handleOutsideClick);
+    };
+}, [sideMenu]);
+
     
 
 
