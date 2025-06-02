@@ -80,14 +80,16 @@ const Hero = () => {
                 </div>
 
                 {/* right */}
+                <div className=''> 
+                    <div data-aos="zoom-in-left" className='hidden md:block md:w-[435px] lg:w-[600px] absolute top-0 right-0 z-10'>
+                        <Image className='w-full relative' src={hero} alt='Hero_item' />
 
-                <div data-aos="zoom-in-left" className='hidden md:block md:w-[435px] lg:w-[600px] absolute top-0 right-0 z-10'>
-                    <Image className='w-full' src={hero} alt='Hero_item' />
+                        <div data-aos="zoom-in-left" className='mt-6 fixed hidden md:block md:top-[385px] md:right-[-30px] lg:top-[530px] lg:right-[20px] z-11 translate-x-[-50%] translate-y-[-50%]'>
+                            <SpinBtn />
+                        </div>
+                    </div>
+                </div>
 
-                </div>
-                <div data-aos="zoom-in-left" className='mt-6 fixed hidden md:block md:top-[-171px] md:right-[20px] lg:top-[290px] lg:right-[85px] z-11'>
-                    <SpinBtn />
-                </div>
 
             </div>
 
