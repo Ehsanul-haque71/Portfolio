@@ -7,6 +7,8 @@ import { VscClose } from "react-icons/vsc";
 import { PiAlignRightBold } from "react-icons/pi";
 import { FaBehance } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
@@ -127,10 +129,21 @@ const SlideMenu = ({ onMenuToggle, sideMenu, setSideMenu }) => {
                 </div>
             </div>
             <div className='flex gap-4 text-white '>
-                <FaBehance className='w-[24px] h-[24px] ' />
-                <FaLinkedinIn className='w-[24px] h-[24px]' />
-                <FaDribbble className='w-[24px] h-[24px] ' />
-                <FaGithub className='w-[24px] h-[24px] ' />
+                <a href="https://www.facebook.com/profile.php?id=100008485058668">
+                    <FaFacebook className='w-[24px] h-[24px] hover:text-[#FFB646]' />
+                </a>
+
+                <a href='https://www.linkedin.com/in/mohd-ehsanul-haque/'>
+                    <FaLinkedinIn className='w-[24px] h-[24px] hover:text-[#FFB646]' />
+                </a>
+
+                <a href='https://www.instagram.com/r_o_u_d_r_a_a_a?igsh=OGYwNGpzaWx2Z294'>
+                    <FaInstagram className='w-[24px] h-[24px] hover:text-[#FFB646]' />
+                </a>
+
+                <a href='https://github.com/Ehsanul-haque71'>
+                    <FaGithub className='w-[24px] h-[24px] hover:text-[#FFB646]' />
+                </a>
             </div>
         </div>
     )
