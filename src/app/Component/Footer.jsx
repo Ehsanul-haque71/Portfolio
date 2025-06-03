@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react'
 import { MdArrowOutward } from "react-icons/md";
 import { FaBehance } from "react-icons/fa";
@@ -88,10 +90,14 @@ const Footer = () => {
                         <div>
                             <p className='font-DM_Sans text-[12px] sm:text-[18px] leading-7 text-white'>©2023 Ehsanul Haque, All Rights Reserved</p>
                         </div>
-                        <Link href={"/"} className='flex items-center'>
+                        <button
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                            className='flex items-center'
+                        >
                             <p className='font-DM_Sans text-[12px] sm:text-[18px] leading-7 text-white'>Back to Top</p>
-                            <span><HiArrowSmUp className=' w-5 h-5 sm:w-6 sm:h-6  text-[#FFB646]' /></span>
-                        </Link>
+                            <span><HiArrowSmUp className='w-5 h-5 sm:w-6 sm:h-6 text-[#FFB646]' /></span>
+                        </button>
+
                     </div>
 
                 </div>
